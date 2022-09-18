@@ -15,9 +15,9 @@ switches:
   s_right_flipper_eos:
     number: 0-1
     tags: right_flipper
-  s_trough_1:
+  s_drain:
     number: 0-4
-  s_shooter_lane:
+  s_plunger:
     number: 0-5
   s_left_inlane:
     number: 0-2
@@ -31,14 +31,14 @@ switches:
 
 coils:
   c_flipper_left_main:
-    number: 0  # again, these numbers will probably be different for you
+    number: 0-2
   c_flipper_left_hold:
-    number: 1  # check your platform-specific documentation for the actual numbers
+    number: 0-3
     allow_enable: true
   c_flipper_right_main:
-    number: 2
+    number: 0-0
   c_flipper_right_hold:
-    number: 3
+    number: 0-1
     allow_enable: true
 
 playfields:
@@ -53,9 +53,11 @@ flippers:
     activation_switch: s_left_flipper
     eos_switch: s_left_flipper_eos
     enable_events: machine_reset_phase_3 # TODO: remove once game start is possible
+    debug: true
   right_flipper:
     main_coil: c_flipper_right_main
     hold_coil: c_flipper_right_hold
     activation_switch: s_right_flipper
     eos_switch: s_right_flipper_eos
     enable_events: machine_reset_phase_3 # TODO: remove once game start is possible
+    debug: true
