@@ -24,7 +24,7 @@ switches:
 #  s_left_outlane:
 #    number: 0-3
   s_right_inlane:
-    number:
+    number: 0-7
 #  s_right_outlane:
 #    number: 0-6
 

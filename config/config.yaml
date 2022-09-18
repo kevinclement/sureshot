@@ -5,7 +5,7 @@ hardware:
   driverboards: fast
 
 fast:
-  ports: /dev/ttyUSB1,/dev/ttyUSB2
+  ports: autodetect
 
 config:
   - hardware.yaml
