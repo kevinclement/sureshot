@@ -6,6 +6,11 @@ hardware:
 
 fast:
   ports: autodetect
+  # These are defaults, but mpfls thinks they are required
+  default_normal_debounce_open: 10ms
+  default_normal_debounce_close: 10ms
+  default_quick_debounce_open: 2ms
+  default_quick_debounce_close: 2ms
 
 config:
   - hardware_playfield.yaml
