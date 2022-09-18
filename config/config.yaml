@@ -1,38 +1,11 @@
 #config_version=5
 
-switches:
-  s_left_flipper:
-    number: 0 # TODO: fix with real hardware
-    tags: left_flipper
-  s_right_flipper:
-    number: 1 # TODO: fix with real hardware
-    tags: right_flipper
+hardware:
+  platform: fast
+  driverboards: fast
 
-coils:
-  c_flipper_left_main:
-    number: 0  # again, these numbers will probably be different for you
-  c_flipper_left_hold:
-    number: 1  # check your platform-specific documentation for the actual numbers
-    allow_enable: true
-  c_flipper_right_main:
-    number: 2
-  c_flipper_right_hold:
-    number: 3
-    allow_enable: true
+fast:
+  ports: /dev/ttyUSB1,/dev/ttyUSB2
 
-playfields:
-  playfield:
-    tags: default
-    default_source_device: None  # use None in steps before 8
-
-flippers:
-  left_flipper:
-    main_coil: c_flipper_left_main
-    hold_coil: c_flipper_left_hold
-    activation_switch: s_left_flipper
-    enable_events: machine_reset_phase_3 # TODO: remove once game start is possible
-  right_flipper:
-    main_coil: c_flipper_right_main
-    hold_coil: c_flipper_right_hold
-    activation_switch: s_right_flipper
-    enable_events: machine_reset_phase_3 # TODO: remove once game start is possible
+config:
+  - hardware.yaml

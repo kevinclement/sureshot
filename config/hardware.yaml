@@ -1,0 +1,61 @@
+#config_version=5
+
+switches:
+  # Lower playfield 0804
+  # TODO: Adjust ring numbers
+  s_left_flipper:
+    number: 0-3 # TODO: fix with real hardware
+    tags: left_flipper
+  s_right_flipper:
+    number: 0-6 # TODO: fix with real hardware
+    tags: right_flipper
+  s_left_flipper_eos:
+    number: 0-0
+    tags: left_flipper
+  s_right_flipper_eos:
+    number: 0-1
+    tags: right_flipper
+  s_trough_1:
+    number: 0-4
+  s_shooter_lane:
+    number: 0-5
+  s_left_inlane:
+    number: 0-2
+#  s_left_outlane:
+#    number: 0-3
+  s_right_inlane:
+    number:
+#  s_right_outlane:
+#    number: 0-6
+
+
+coils:
+  c_flipper_left_main:
+    number: 0  # again, these numbers will probably be different for you
+  c_flipper_left_hold:
+    number: 1  # check your platform-specific documentation for the actual numbers
+    allow_enable: true
+  c_flipper_right_main:
+    number: 2
+  c_flipper_right_hold:
+    number: 3
+    allow_enable: true
+
+playfields:
+  playfield:
+    tags: default
+    default_source_device: None  # use None in steps before 8
+
+flippers:
+  left_flipper:
+    main_coil: c_flipper_left_main
+    hold_coil: c_flipper_left_hold
+    activation_switch: s_left_flipper
+    eos_switch: s_left_flipper_eos
+    enable_events: machine_reset_phase_3 # TODO: remove once game start is possible
+  right_flipper:
+    main_coil: c_flipper_right_main
+    hold_coil: c_flipper_right_hold
+    activation_switch: s_right_flipper
+    eos_switch: s_right_flipper_eos
+    enable_events: machine_reset_phase_3 # TODO: remove once game start is possible
