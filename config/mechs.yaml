@@ -4,13 +4,13 @@ flippers:
   left_flipper:
     main_coil: c_flipper_left_main
     hold_coil: c_flipper_left_hold
-    activation_switch: s_left_flipper
+    activation_switch: s_left_inlane
     eos_switch: s_left_flipper_eos
     debug: true
   right_flipper:
     main_coil: c_flipper_right_main
     hold_coil: c_flipper_right_hold
-    activation_switch: s_right_flipper
+    activation_switch: s_right_inlane
     eos_switch: s_right_flipper_eos
     debug: true
 

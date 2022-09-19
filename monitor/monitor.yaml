@@ -1,4 +1,8 @@
 device_size: 0.05
+light:
+  gi_string_left:
+    x: 0.26351351351351354
+    y: 0.8885135135135136
 switch:
   s_drain:
     size: 0.05

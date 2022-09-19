@@ -1,0 +1,7 @@
+#show_version=5
+- duration: 5
+  lights:
+    gi_string_left: ff
+- duration: 5
+  lights:
+    gi_string_left: 0

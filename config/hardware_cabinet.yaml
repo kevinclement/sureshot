@@ -1,12 +1,12 @@
 #config_version=5
 
-switches:
-  s_left_flipper:
-    number: 1-0 # TODO: fix with real hardware
-    tags: left_flipper
-  s_right_flipper:
-    number: 1-1 # TODO: fix with real hardware
-    tags: right_flipper
-  s_start:
-    number: 1-2 # TODO: fix with real hardware
-    tags: start
+# switches:
+#   s_left_flipper:
+#     number: 1-0 # TODO: fix with real hardware
+#     tags: left_flipper
+#   s_right_flipper:
+#     number: 1-1 # TODO: fix with real hardware
+#     tags: right_flipper
+#   s_start:
+#     number: 1-2 # TODO: fix with real hardware
+#     tags: start

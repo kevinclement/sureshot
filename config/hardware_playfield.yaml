@@ -26,6 +26,11 @@ switches:
     number: 0-6
     tags: playfield_active
 
+lights:
+  gi_string_left:
+    number: gi_string_left
+    platform: drivers
+
 coils:
   # Lower playfield 0804
   # TODO: Adjust ring numbers
@@ -35,12 +40,15 @@ coils:
     number: 0-3
     allow_enable: true
   c_flipper_right_main:
-    number: 0-0
+    number: 0-4
   c_flipper_right_hold:
     number: 0-1
     allow_enable: true
   # Upper playfield 3208
   # TODO: Adjust ring numbers
-  c_drain_eject:
-    number: 1-0
-    default_pulse_ms: 20
+  #c_drain_eject:
+  #  number: 1-0
+  #  default_pulse_ms: 20
+  gi_string_left:
+    number: 0-0
+    allow_enable: true  # this will allow 100% enable without pwm
