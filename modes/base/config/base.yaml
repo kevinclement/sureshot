@@ -1,0 +1,16 @@
+#config_version=5
+##! mode: base
+mode:
+  start_events: ball_started
+  priority: 100
+
+variable_player:
+  sg_slings_hit:
+    score: 10
+  sg_pops_top_hit:
+    score: 100
+  sg_pops_bottom_hit:
+    score: 100
+
+config:
+  - shots.yaml

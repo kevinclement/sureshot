@@ -6,3 +6,9 @@ config:
   - hardware_playfield.yaml
   - mechs.yaml
   - virtual.yaml
+
+modes:
+  - base
+
+game:
+  balls_per_game: 5

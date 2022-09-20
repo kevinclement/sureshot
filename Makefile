@@ -8,4 +8,4 @@ watch:
 	mpf monitor
 
 lint:
-	find config -type f -name "*.yaml" -exec mpf format "{}" --yes \;
+	find config modes -type f -name "*.yaml" -exec mpf format "{}" --yes \;

@@ -1,0 +1,32 @@
+#config_version=5
+
+shots:
+  sh_sling_left:
+    switch: s_sling_left
+  sh_sling_right:
+    switch: s_sling_right
+  sh_sling_top_left:
+    switch: s_sling_top_left
+  sh_sling_top_right:
+    switch: s_sling_top_right
+  sh_popbumper_left:
+    switch: s_popbumper_left
+  sh_popbumper_middle:
+    switch: s_popbumper_middle
+  sh_popbumper_right:
+    switch: s_popbumper_right
+
+shot_groups:
+  sg_pops_top:
+    shots:
+      - sh_popbumper_left
+      - sh_popbumper_right
+  sg_pops_bottom:
+    shots:
+      - sh_popbumper_middle
+  sg_slings:
+    shots:
+      - sh_sling_top_left
+      - sh_sling_top_right
+      - sh_sling_left
+      - sh_sling_right

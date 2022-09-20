@@ -44,7 +44,7 @@ switches:
   s_toplane_left:
     number: 2-8
     tags: playfield_active
-  s_sling_topleft:
+  s_sling_top_left:
     number: 2-21
     tags: playfield_active
   s_standup_middle:
