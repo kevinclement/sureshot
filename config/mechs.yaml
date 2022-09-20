@@ -26,6 +26,29 @@ ball_devices:
     ball_switches: s_plunger
     mechanical_eject: true
     eject_timeouts: 5s
+  bd_saucer_left:
+    coil: c_saucer_left
+    switch: s_saucer_left
+  bd_saucer_right:
+    coil: c_saucer_right
+    switch: s_sauce_right
+    
+autofire_coils:
+  ac_slightshot_left:
+    coil: c_slightshot_left
+    switch: s_slingshot_right
+  ac_slightshot_right:
+    coil: c_slingshot_right
+    switch: s_slingshot_right
+  ac_popbumper_left:
+    coil: c_popbumper_left
+    switch: s_popbumper_left
+  ac_popbumper_middle:
+    coil: c_popbumper_middle
+    switch: s_popbumper_middle
+  ac_popbumper_right:
+    coil: c_popbumper_right
+    switch: s_popbumper_right
 
 playfields:
   playfield:
