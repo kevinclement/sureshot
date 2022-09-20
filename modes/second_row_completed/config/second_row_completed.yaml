@@ -1,0 +1,10 @@
+#config_version=5
+
+##! mode: second_row_completed
+mode:
+  start_events: award_second_row_completed
+  priority: 210
+
+variable_player:
+  sg_pops_bottom_hit:
+    score: 1000|block

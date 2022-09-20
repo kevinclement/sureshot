@@ -84,3 +84,9 @@ achievement_groups:
       - ac_ball_4
       - ac_ball_5
     events_when_all_completed: award_top_row_completed
+
+  ag_ball_row_second:
+    achievements:
+      - ac_ball_6
+      - ac_ball_9
+    events_when_all_completed: award_second_row_completed
