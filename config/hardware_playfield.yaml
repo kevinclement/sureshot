@@ -27,9 +27,33 @@ switches:
     tags: playfield_active
 
 lights:
-  gi_string_left:
-    number: gi_string_left
-    platform: drivers
+  # gi_string_left:
+  #   number: gi_string_left
+  #   platform: drivers
+  led_0:
+    type: rgb
+    number: 49
+  # led_1:
+  #   previous: led_0
+  # led_2:
+  #   previous: led_1
+  #   subtype: led
+  #   type: rgb            
+
+light_settings:
+  default_fade_ms: 40
+  # default_color_correction_profile: correction_profile_less_blue
+  color_correction_profiles:
+    correction_profile_less_red:
+      whitepoint: [0.9, 1.0, 1.0]
+      gamma: 2.5
+      linear_slope: 1.0
+      linear_cutoff: 0.0
+    correction_profile_less_blue:
+      whitepoint: [1.0, 1.0, 0.9]
+      gamma: 2.5
+      linear_slope: 0.8
+      linear_cutoff: 0.1
 
 coils:
   # Lower playfield 0804

@@ -4,8 +4,14 @@ hardware:
   platform: fast
   driverboards: fast
 
+mpf:
+  default_light_hw_update_hz: 30
+
 fast:
-  ports: autodetect
+  # ports: autodetect
+  ports: /dev/tty.usbserial-2101, /dev/tty.usbserial-2102
+  rgb_buffer: 3
+  # debug: true
   # These are defaults, but mpfls thinks they are required
   default_normal_debounce_open: 10ms
   default_normal_debounce_close: 10ms

@@ -1,7 +1,13 @@
 #show_version=5
-- duration: 5
+- time: 0
+  duration: -1
   lights:
-    gi_string_left: ff
-- duration: 5
-  lights:
-    gi_string_left: 0
+    led_0: 
+      color: white%25
+
+# - duration: 0
+#   lights:
+#     led_0: ff
+# - duration: 5
+#   lights:
+#     led_0: 0
