@@ -142,3 +142,18 @@ lights:
   l_5:
     previous: l_3
     type: rgb
+  l_triangle_4:
+    previous: l_5
+    type: rgb
+  l_triangle_2:
+    previous: l_triangle_4
+    type: rgb
+  l_triangle_1:
+    previous: l_triangle_2
+    type: rgb
+  l_triangle_3:
+    previous: l_triangle_1
+    type: rgb
+  l_triangle_5:
+    previous: l_triangle_3
+    type: rgb

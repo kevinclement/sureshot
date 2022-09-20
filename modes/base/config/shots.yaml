@@ -109,6 +109,26 @@ shot_groups:
       - sh_ball_5
       - sh_ball_5_top
 
+  sg_ball_4:
+    shots:
+      - sh_ball_4
+      - sh_ball_4_top
+
+  sg_ball_2:
+    shots:
+      - sh_ball_2
+      - sh_ball_2_top
+
+  sg_ball_3:
+    shots:
+      - sh_ball_3
+      - sh_ball_3_top
+
+  sg_ball_5:
+    shots:
+      - sh_ball_5
+      - sh_ball_5_top
+
 shot_profiles:
   sp_ball:
     states:

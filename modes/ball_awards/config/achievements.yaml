@@ -1,0 +1,42 @@
+#config_version=5
+
+achievements:
+  ac_ball_4:
+    start_events: sg_ball_4_unlit_hit
+    show_when_completed: on
+    events_when_started: award_ball_4
+    complete_events: award_ball_4
+    show_tokens:
+      light: l_triangle_4
+
+  ac_ball_2:
+    start_events: sg_ball_2_unlit_hit
+    show_when_completed: on
+    events_when_started: award_ball_2
+    complete_events: award_ball_2
+    show_tokens:
+      light: l_triangle_2
+
+  ac_ball_1:
+    start_events: sh_ball_1_unlit_hit
+    show_when_completed: on
+    events_when_started: award_ball_1
+    complete_events: award_ball_1
+    show_tokens:
+      light: l_triangle_1
+
+  ac_ball_3:
+    start_events: sg_ball_3_unlit_hit
+    show_when_completed: on
+    events_when_started: award_ball_3
+    complete_events: award_ball_3
+    show_tokens:
+      light: l_triangle_3
+
+  ac_ball_5:
+    start_events: sg_ball_5_unlit_hit
+    show_when_completed: on
+    events_when_started: award_ball_5
+    complete_events: award_ball_5
+    show_tokens:
+      light: l_triangle_5

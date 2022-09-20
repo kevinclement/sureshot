@@ -9,6 +9,7 @@ config:
 
 modes:
   - base
+  - ball_awards
 
 game:
   balls_per_game: 5
