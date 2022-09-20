@@ -104,3 +104,18 @@ coils:
   c_drain_eject:
     number: 2-0
     default_pulse_ms: 20
+  c_sling_left:
+    number: 2-1
+  c_sling_right:
+    number: 2-2
+  c_saucer_left:
+    number: 2-3
+  c_saucer_right:
+    number: 2-4
+  c_popbumper_left:
+    number: 2-5
+  c_popbumper_middle:
+    number: 2-6
+  c_popbumper_right:
+    number: 2-6
+
