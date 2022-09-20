@@ -10,6 +10,7 @@ config:
 modes:
   - base
   - ball_awards
+  - top_row_completed
 
 game:
   balls_per_game: 5

@@ -40,3 +40,13 @@ achievements:
     complete_events: award_ball_5
     show_tokens:
       light: l_triangle_5
+
+achievement_groups:
+  ag_ball_row_top:
+    achievements:
+      - ac_ball_1
+      - ac_ball_2
+      - ac_ball_3
+      - ac_ball_4
+      - ac_ball_5
+    events_when_all_completed: award_top_row_completed

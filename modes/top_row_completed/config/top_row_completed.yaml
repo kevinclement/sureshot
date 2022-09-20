@@ -1,0 +1,10 @@
+#config_version=5
+
+##! mode: top_row_completed
+mode:
+  start_events: award_top_row_completed
+  priority: 200
+
+variable_player:
+  sg_pops_top_hit:
+    score: 1000|block
