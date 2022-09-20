@@ -88,7 +88,7 @@ shots:
     switch: s_toplane_left
     show_tokens:
       leds: l_10
-  
+
   sh_ball_11:
     profile: sp_ball
     switch: s_toplane_right
@@ -106,7 +106,7 @@ shots:
     switch: s_midlane_right
     show_tokens:
       leds: l_9
-      
+
   sh_left_saucer:
     hit_events: balldevice_bd_saucer_left_ball_entered
   sh_right_saucer:
