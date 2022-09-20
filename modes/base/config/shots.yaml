@@ -83,34 +83,25 @@ shots:
     show_tokens:
       leds: l_5_top
 
-  sh_ball_10:
-    profile: sp_ball
-    switch: s_toplane_left
-    show_tokens:
-      leds: l_10
-  
-  sh_ball_11:
-    profile: sp_ball
-    switch: s_toplane_right
-    show_tokens:
-      leds: l_11
-
-  sh_ball_6:
-    profile: sp_ball
-    switch: s_midlane_left
-    show_tokens:
-      leds: l_6
-
-  sh_ball_9:
-    profile: sp_ball
-    switch: s_midlane_right
-    show_tokens:
-      leds: l_9
-      
-  sh_left_saucer:
+  sh_saucer_left:
     hit_events: balldevice_bd_saucer_left_ball_entered
-  sh_right_saucer:
+  sh_saucer_right:
     hit_events: balldevice_bd_saucer_right_ball_entered
+
+  sh_left_standup:
+    switch: s_standup_left
+    show_tokens:
+      leds: l_13, l_7
+
+  sh_middle_standup:
+    switch: s_standup_middle
+    show_tokens:
+      leds: l_12, l_15
+
+  sh_right_standup:
+    switch: s_standup_right
+    show_tokens:
+      leds: l_8, l_14
 
 shot_groups:
   sg_pops_top:
@@ -137,11 +128,10 @@ shot_groups:
       - sh_ball_4_top
       - sh_ball_5
       - sh_ball_5_top
-      - sh_ball_6
-      - sh_ball_9
-      - sh_ball_10
-      - sh_ball_11
-
+      - sh_right_standup
+      - sh_left_standup
+      - sh_middle_standup
+     
   sg_ball_4:
     shots:
       - sh_ball_4

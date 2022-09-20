@@ -154,8 +154,26 @@ lights:
   l_9:
     previous: l_6
     type: rgb    
-  l_triangle_4:
+  l_12:
     previous: l_9
+    type: rgb
+  l_15:
+    previous: l_12
+    type: rgb
+  l_13:
+    previous: l_15
+    type: rbg
+  l_7:
+    previous: l_13
+    type: rgb
+  l_14:
+    previous: l_7
+    type: rgb
+  l_8:
+    previous: l_14
+    type: rgb
+  l_triangle_4:
+    previous: l_8
     type: rgb
   l_triangle_2:
     previous: l_triangle_4
