@@ -27,19 +27,19 @@ ball_devices:
     mechanical_eject: true
     eject_timeouts: 5s
   bd_saucer_left:
-    coil: c_saucer_left
-    switch: s_saucer_left
+    ball_switches: s_saucer_left
+    eject_coil: c_saucer_left
   bd_saucer_right:
-    coil: c_saucer_right
-    switch: s_sauce_right
-    
+    ball_switches: s_saucer_right
+    eject_coil: c_saucer_right
+
 autofire_coils:
   ac_slightshot_left:
-    coil: c_slightshot_left
-    switch: s_slingshot_right
+    coil: c_sling_left
+    switch: s_sling_right
   ac_slightshot_right:
-    coil: c_slingshot_right
-    switch: s_slingshot_right
+    coil: c_sling_right
+    switch: s_sling_right
   ac_popbumper_left:
     coil: c_popbumper_left
     switch: s_popbumper_left

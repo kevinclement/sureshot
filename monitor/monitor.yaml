@@ -106,6 +106,16 @@ switch:
     size: 0.07
     x: 0.695898161244696
     y: 0.7213578500707214
+  s_sling_top_right:
+    shape: RECTANGLE
+    size: 0.1
+    x: 0.8033946251768034
+    y: 0.3493635077793494
+  s_sling_topleft:
+    shape: RECTANGLE
+    size: 0.1
+    x: 0.10466760961810467
+    y: 0.3493635077793494
   s_standup_left:
     shape: CIRCLE
     size: 0.05
