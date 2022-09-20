@@ -142,8 +142,20 @@ lights:
   l_5:
     previous: l_3
     type: rgb
-  l_triangle_4:
+  l_10:
     previous: l_5
+    type: rgb
+  l_11:
+    previous: l_10
+    type: rgb
+  l_6:
+    previous: l_11
+    type: rgb
+  l_9:
+    previous: l_6
+    type: rgb    
+  l_triangle_4:
+    previous: l_9
     type: rgb
   l_triangle_2:
     previous: l_triangle_4
@@ -156,4 +168,34 @@ lights:
     type: rgb
   l_triangle_5:
     previous: l_triangle_3
+    type: rgb
+  l_triangle_6:
+    previous: l_triangle_5
+    type: rgb
+  l_triangle_7:
+    previous: l_triangle_6
+    type: rgb
+  l_triangle_8:
+    previous: l_triangle_7
+    type: rgb
+  l_triangle_9:
+    previous: l_triangle_8
+    type: rgb
+  l_triangle_10:
+    previous: l_triangle_9
+    type: rgb
+  l_triangle_12:
+    previous: l_triangle_10
+    type: rgb
+  l_triangle_11:
+    previous: l_triangle_12
+    type: rgb
+  l_triangle_13:
+    previous: l_triangle_11
+    type: rgb
+  l_triangle_14:
+    previous: l_triangle_13
+    type: rgb
+  l_triangle_15:
+    previous: l_triangle_14
     type: rgb
