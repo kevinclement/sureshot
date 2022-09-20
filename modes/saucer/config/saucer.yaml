@@ -1,0 +1,25 @@
+#config_version=5
+##! mode: saucer
+
+mode:
+    start_events: ball_started
+    priority: 120
+
+variable_player:
+    sh_left_saucer_hit:
+        score: (5 - device.counters.left_saucer_ball_count.value) * 100 + device.counters.left_saucer_ball_count.value * 1000
+    sh_right_saucer_hit:
+        score: (5 - device.counters.right_saucer_ball_count.value) * 100 + device.counters.right_saucer_ball_count.value * 1000
+
+counters:
+  left_saucer_ball_count:
+    count_events: left_saucer_ball
+    starting_count: 0
+    count_complete_value: 5
+    direction: up
+  right_saucer_ball_count:
+    count_events: right_saucer_ball
+    starting_count: 0
+    count_complete_value: 5
+    direction: up
+

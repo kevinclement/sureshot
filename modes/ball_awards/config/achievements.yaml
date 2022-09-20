@@ -6,6 +6,7 @@ achievements:
     show_when_completed: on
     events_when_started: award_ball_4
     complete_events: award_ball_4
+    events_when_completed: left_saucer_ball
     show_tokens:
       light: l_triangle_4
 
@@ -38,6 +39,7 @@ achievements:
     show_when_completed: on
     events_when_started: award_ball_5
     complete_events: award_ball_5
+    events_when_completed: left_saucer_ball
     show_tokens:
       light: l_triangle_5
 

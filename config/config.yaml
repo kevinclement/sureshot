@@ -11,6 +11,7 @@ modes:
   - base
   - ball_awards
   - top_row_completed
+  - saucer
 
 game:
   balls_per_game: 5

@@ -132,8 +132,8 @@ switch:
     y: 0.17821782178217824
   s_saucer_left:
     shape: CIRCLE
-    x: 0.10183875530410184
-    y: 0.2164073550212164
+    x: 0.09797297297297297
+    y: 0.2195945945945946
   s_saucer_right:
     shape: CIRCLE
     size: 0.05

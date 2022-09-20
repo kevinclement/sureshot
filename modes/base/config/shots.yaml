@@ -83,6 +83,11 @@ shots:
     show_tokens:
       leds: l_5_top
 
+  sh_left_saucer:
+    hit_events: balldevice_bd_saucer_left_ball_entered
+  sh_right_saucer:
+    hit_events: balldevice_bd_saucer_right_ball_entered
+
 shot_groups:
   sg_pops_top:
     shots:
