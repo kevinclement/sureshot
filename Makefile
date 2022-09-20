@@ -2,7 +2,7 @@ start:
 	mpf -tbv
 
 startv:
-	mpf -tbv -x
+	mpf -tbv -X
 
 watch:
 	mpf monitor

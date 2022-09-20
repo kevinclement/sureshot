@@ -25,6 +25,69 @@ switches:
   s_right_outlane:
     number: 0-6
     tags: playfield_active
+  # Upper playfield 3208
+  # TODO: Adjust ring numbers
+  s_sling_left:
+    number: 2-0
+    tags: playfield_active
+  s_sling_eos_left:
+    number: 2-1
+  s_sling_right:
+    number: 2-2
+    tags: playfield_active
+  s_sling_eos_right:
+    number: 2-3
+  s_midlane_left:
+    number: 2-4
+    tags: playfield_active
+  s_standup_left:
+    number: 2-5
+    tags: playfield_active
+  s_standup_right:
+    number: 2-6
+    tags: playfield_active
+  s_midlane_right:
+    number: 2-7
+    tags: playfield_active
+  s_toplane_left:
+    number: 2-8
+    tags: playfield_active
+  s_standup_middle:
+    number: 2-9
+    tags: playfield_active
+  s_toplane_right:
+    number: 2-10
+    tags: playfield_active
+  s_saucer_left:
+    number: 2-11
+    tags: playfield_active
+  s_popbumper_left:
+    number: 2-12
+    tags: playfield_active
+  s_popbumper_middle:
+    number: 2-13
+    tags: playfield_active
+  s_popbumper_right:
+    number: 2-14
+    tags: playfield_active
+  s_saucer_right:
+    number: 2-15
+    tags: playfield_active
+  s_rollover_left:
+    number: 2-16
+    tags: playfield_active
+  s_rollover_middle_left:
+    number: 2-17
+    tags: playfield_active
+  s_rollover_middle:
+    number: 2-18
+    tags: playfield_active
+  s_rollover_middle_right:
+    number: 2-19
+    tags: playfield_active
+  s_rollover_right:
+    number: 2-20
+    tags: playfield_active
 
 coils:
   # Lower playfield 0804

@@ -17,9 +17,7 @@ flippers:
 ball_devices:
   bd_drain:
     ball_switches: s_drain
-    # TODO: Add once eject coil is wired
-    # eject_coil: c_drain_eject
-    mechanical_eject: true
+    eject_coil: c_drain_eject
     eject_targets: bd_plunger_lane
     tags: drain, home, trough
     eject_timeouts: 3s

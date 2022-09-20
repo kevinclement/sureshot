@@ -13,9 +13,39 @@ switch:
     size: 0.08
     x: 0.13295615275813297
     y: 0.7015558698727016
+  s_left_outlane:
+    shape: RECTANGLE
+    size: 0.08
+    x: 0.06789250353606789
+    y: 0.7072135785007072
+  s_midlane_left:
+    shape: RECTANGLE
+    size: 0.08
+    x: 0.06223479490806224
+    y: 0.545968882602546
+  s_midlane_right:
+    shape: RECTANGLE
+    size: 0.08
+    x: 0.8514851485148515
+    y: 0.5473833097595474
   s_plunger:
     x: 0.9476661951909477
     y: 0.8585572842998586
+  s_popbumper_left:
+    shape: CIRCLE
+    size: 0.15
+    x: 0.26591230551626593
+    y: 0.26732673267326734
+  s_popbumper_middle:
+    shape: CIRCLE
+    size: 0.15
+    x: 0.4582743988684583
+    y: 0.3408769448373409
+  s_popbumper_right:
+    shape: CIRCLE
+    size: 0.15
+    x: 0.6478076379066479
+    y: 0.26874115983026875
   s_right_flipper:
     size: 0.05
     x: 0.8231966053748232
@@ -25,8 +55,83 @@ switch:
     size: 0.08
     x: 0.7779349363507779
     y: 0.7001414427157001
+  s_right_outlane:
+    shape: RECTANGLE
+    size: 0.08
+    x: 0.842998585572843
+    y: 0.7043847241867044
+  s_rollover_left:
+    shape: RECTANGLE
+    size: 0.08
+    x: 0.24611032531824611
+    y: 0.1768033946251768
+  s_rollover_middle:
+    shape: RECTANGLE
+    size: 0.08
+    x: 0.45261669024045265
+    y: 0.17821782178217824
+  s_rollover_middle_left:
+    shape: RECTANGLE
+    size: 0.08
+    x: 0.3507779349363508
+    y: 0.1768033946251768
+  s_rollover_middle_right:
+    shape: RECTANGLE
+    size: 0.08
+    x: 0.562942008486563
+    y: 0.1768033946251768
+  s_rollover_right:
+    shape: RECTANGLE
+    size: 0.08
+    x: 0.6647807637906648
+    y: 0.17821782178217824
+  s_saucer_left:
+    shape: CIRCLE
+    x: 0.10183875530410184
+    y: 0.2164073550212164
+  s_saucer_right:
+    shape: CIRCLE
+    size: 0.05
+    x: 0.8090523338048091
+    y: 0.2164073550212164
+  s_sling_left:
+    rotation: 130
+    shape: TRIANGLE
+    size: 0.07
+    x: 0.214992927864215
+    y: 0.712871287128713
+  s_sling_right:
+    rotation: 340
+    shape: TRIANGLE
+    size: 0.07
+    x: 0.695898161244696
+    y: 0.7213578500707214
+  s_standup_left:
+    shape: CIRCLE
+    size: 0.05
+    x: 0.12446958981612448
+    y: 0.5318246110325319
+  s_standup_middle:
+    shape: CIRCLE
+    size: 0.05
+    x: 0.45544554455445546
+    y: 0.4002828854314003
+  s_standup_right:
+    shape: CIRCLE
+    x: 0.7864214992927865
+    y: 0.5318246110325319
   s_start:
     shape: CIRCLE
     size: 0.05
     x: 0.19519094766619519
     y: 0.9504950495049506
+  s_toplane_left:
+    shape: RECTANGLE
+    size: 0.08
+    x: 0.05940594059405941
+    y: 0.3493635077793494
+  s_toplane_right:
+    shape: RECTANGLE
+    size: 0.08
+    x: 0.8514851485148515
+    y: 0.3493635077793494
