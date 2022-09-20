@@ -113,3 +113,32 @@ coils:
     number: 2-6
   c_popbumper_right:
     number: 2-7
+
+lights:
+  l_4_top:
+    number: 0
+    type: rgb
+  l_2_top:
+    previous: l_4_top
+    type: rgb
+  l_1:
+    previous: l_2_top
+    type: rgb
+  l_3_top:
+    previous: l_1
+    type: rgb
+  l_5_top:
+    previous: l_3_top
+    type: rgb
+  l_4:
+    previous: l_5_top
+    type: rgb
+  l_2:
+    previous: l_4
+    type: rgb
+  l_3:
+    previous: l_2
+    type: rgb
+  l_5:
+    previous: l_3
+    type: rgb

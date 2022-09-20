@@ -11,6 +11,8 @@ variable_player:
     score: 100
   sg_pops_bottom_hit:
     score: 100
+  sg_balls_hit:
+    score: 500
 
 config:
   - shots.yaml
