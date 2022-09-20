@@ -1,0 +1,15 @@
+Slingshot 10 points
+Rubber Score Wall (Maybe upper sling things?) 10 points
+Pop bumpers 100 points, unless lit, then 1000 points
+	- 1, 2, 3, 4, 5 ball rollovers light left & right pops
+	- 6, 7, 8, 9 lights center pop
+Ball rollovers 500 points
+Stand up targets 500 points
+Inlane/outlane 500 points
+
+Saucers worth 100 points per unlit ball in set, 1000 points per lit ball in set
+	left balls in set 4, 6, 10, 13, 15
+	right balls in set 5, 9, 11, 14, 15
+
+End of ball bonus 1000 points for every lit ball
+Special fire knocker
