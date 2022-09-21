@@ -82,6 +82,54 @@ achievements:
     show_tokens:
       light: l_triangle_11
 
+  ac_ball_13:
+    start_events: sh_left_standup_unlit_hit
+    show_when_completed: on
+    events_when_started: award_ball_13
+    complete_events: award_ball_13
+    show_tokens:
+      light: l_triangle_13
+
+  ac_ball_7:
+    start_events: sh_left_standup_unlit_hit
+    show_when_completed: on
+    events_when_started: award_ball_7
+    complete_events: award_ball_7
+    show_tokens:
+      light: l_triangle_7
+
+  ac_ball_12:
+    start_events: sh_middle_standup_unlit_hit
+    show_when_completed: on
+    events_when_started: award_ball_12
+    complete_events: award_ball_12
+    show_tokens:
+      light: l_triangle_12
+
+  ac_ball_15:
+    start_events: sh_middle_standup_unlit_hit
+    show_when_completed: on
+    events_when_started: award_ball_15
+    complete_events: award_ball_15
+    show_tokens:
+      light: l_triangle_15
+
+  ac_ball_8:
+    start_events: sh_right_standup_unlit_hit
+    show_when_completed: on
+    events_when_started: award_ball_8
+    complete_events: award_ball_8
+    show_tokens:
+      light: l_triangle_8
+
+  ac_ball_14:
+    start_events: sh_right_standup_unlit_hit
+    show_when_completed: on
+    events_when_started: award_ball_14
+    complete_events: award_ball_14
+    show_tokens:
+      light: l_triangle_14
+
 achievement_groups:
   ag_ball_row_top:
     achievements:
