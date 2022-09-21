@@ -171,4 +171,4 @@ achievement_groups:
       - ac_ball_13
       - ac_ball_14
       - ac_ball_15
-      events_when_all_completed: award_all_balls_completed
+    events_when_all_completed: award_all_balls_completed

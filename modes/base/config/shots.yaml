@@ -76,7 +76,7 @@ shots:
     advance_events: sh_ball_5_top_hit
     show_tokens:
       leds: l_5
-  
+
   sh_ball_5_top:
     profile: sp_ball
     switch: s_rollover_right
@@ -98,7 +98,7 @@ shots:
 
   sh_saucer_left:
     hit_events: balldevice_bd_saucer_left_ball_entered
-    
+
   sh_saucer_right:
     hit_events: balldevice_bd_saucer_right_ball_entered
 
