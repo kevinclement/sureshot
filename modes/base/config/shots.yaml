@@ -83,6 +83,7 @@ shots:
     show_tokens:
       leds: l_5_top
 
+<<<<<<< HEAD
   sh_saucer_left:
     hit_events: balldevice_bd_saucer_left_ball_entered
   sh_saucer_right:
@@ -90,6 +91,17 @@ shots:
 
   sh_left_standup:
     switch: s_standup_left
+=======
+  sh_ball_10:
+    profile: sp_ball
+    switch: s_toplane_left
+    show_tokens:
+      leds: l_10
+
+  sh_ball_11:
+    profile: sp_ball
+    switch: s_toplane_right
+>>>>>>> cb252ddfd9f18260d83732368842e956a024ba88
     show_tokens:
       leds: l_13, l_7
 
@@ -101,7 +113,16 @@ shots:
   sh_right_standup:
     switch: s_standup_right
     show_tokens:
+<<<<<<< HEAD
       leds: l_8, l_14
+=======
+      leds: l_9
+
+  sh_left_saucer:
+    hit_events: balldevice_bd_saucer_left_ball_entered
+  sh_right_saucer:
+    hit_events: balldevice_bd_saucer_right_ball_entered
+>>>>>>> cb252ddfd9f18260d83732368842e956a024ba88
 
 shot_groups:
   sg_pops_top:

@@ -115,6 +115,7 @@ coils:
     number: 2-7
 
 lights:
+  # Inserts
   l_4_top:
     number: 0
     type: rgb
@@ -172,6 +173,8 @@ lights:
   l_8:
     previous: l_14
     type: rgb
+
+  # Triangle
   l_triangle_4:
     previous: l_8
     type: rgb
@@ -216,4 +219,15 @@ lights:
     type: rgb
   l_triangle_15:
     previous: l_triangle_14
+    type: rgb
+
+  # Pops
+  l_popbumper_left:
+    previous: l_triangle_15
+    type: rgb
+  l_popbumper_middle:
+    previous: l_popbumper_left
+    type: rgb
+  l_popbumper_right:
+    previous: l_popbumper_middle
     type: rgb

@@ -1,0 +1,10 @@
+#config_version=5
+
+##! mode: bonus
+mode_settings:
+  display_delay_ms: 1s
+  hurry_up_delay_ms: 0
+  bonus_entries:
+    - event: bonus_lit_balls
+      score: 1000
+      player_score_entry: lit_balls

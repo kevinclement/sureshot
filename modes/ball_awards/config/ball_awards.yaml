@@ -7,3 +7,7 @@ mode:
 
 config:
   - achievements.yaml
+
+variable_player:
+  award_ball:
+    lit_balls: 1
