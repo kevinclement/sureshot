@@ -54,7 +54,7 @@ achievements:
     events_when_completed: left_saucer_ball, award_ball
     show_tokens:
       light: l_triangle_6
-  
+
   ac_ball_7:
     start_events: sh_left_standup_unlit_hit
     show_when_completed: on
@@ -63,7 +63,7 @@ achievements:
     events_when_completed: award_ball
     show_tokens:
       light: l_triangle_7
-  
+
   ac_ball_8:
     start_events: sh_right_standup_unlit_hit
     show_when_completed: on
@@ -90,7 +90,7 @@ achievements:
     events_when_completed: left_saucer_ball, award_ball
     show_tokens:
       light: l_triangle_10
-  
+
   ac_ball_12:
     start_events: sh_middle_standup_unlit_hit
     show_when_completed: on
@@ -117,7 +117,7 @@ achievements:
     events_when_completed: left_saucer_ball, award_ball
     show_tokens:
       light: l_triangle_13
-  
+
   ac_ball_14:
     start_events: sh_right_standup_unlit_hit
     show_when_completed: on
