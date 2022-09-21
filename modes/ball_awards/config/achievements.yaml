@@ -42,7 +42,7 @@ achievements:
     show_when_completed: on
     events_when_started: award_ball_5
     complete_events: award_ball_5
-    events_when_completed: left_saucer_ball, award_ball
+    events_when_completed: right_saucer_ball, award_ball
     show_tokens:
       light: l_triangle_5
 
@@ -51,7 +51,7 @@ achievements:
     show_when_completed: on
     events_when_started: award_ball_6
     complete_events: award_ball_6
-    events_when_completed: award_ball
+    events_when_completed: left_saucer_ball, award_ball
     show_tokens:
       light: l_triangle_6
   
@@ -78,7 +78,7 @@ achievements:
     show_when_completed: on
     events_when_started: award_ball_9
     complete_events: award_ball_9
-    events_when_completed: award_ball
+    events_when_completed: right_saucer_ball, award_ball
     show_tokens:
       light: l_triangle_9
 
@@ -87,7 +87,7 @@ achievements:
     show_when_completed: on
     events_when_started: award_ball_10
     complete_events: award_ball_10
-    events_when_completed: award_ball
+    events_when_completed: left_saucer_ball, award_ball
     show_tokens:
       light: l_triangle_10
   
@@ -105,7 +105,7 @@ achievements:
     show_when_completed: on
     events_when_started: award_ball_11
     complete_events: award_ball_11
-    events_when_completed: award_ball
+    events_when_completed: right_saucer_ball, award_ball
     show_tokens:
       light: l_triangle_11
 
@@ -114,7 +114,7 @@ achievements:
     show_when_completed: on
     events_when_started: award_ball_13
     complete_events: award_ball_13
-    events_when_completed: award_ball
+    events_when_completed: left_saucer_ball, award_ball
     show_tokens:
       light: l_triangle_13
   
@@ -123,7 +123,7 @@ achievements:
     show_when_completed: on
     events_when_started: award_ball_14
     complete_events: award_ball_14
-    events_when_completed: award_ball
+    events_when_completed: right_saucer_ball, award_ball
     show_tokens:
       light: l_triangle_14
 
@@ -132,7 +132,7 @@ achievements:
     show_when_completed: on
     events_when_started: award_ball_15
     complete_events: award_ball_15
-    events_when_completed: award_ball
+    events_when_completed: right_saucer_ball, left_saucer_ball, award_ball
     show_tokens:
       light: l_triangle_15
 

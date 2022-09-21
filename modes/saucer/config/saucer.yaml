@@ -5,9 +5,9 @@ mode:
   priority: 120
 
 variable_player:
-  sh_left_saucer_hit:
+  sh_saucer_left_hit:
     score: (5 - device.counters.left_saucer_ball_count.value) * 100 + device.counters.left_saucer_ball_count.value * 1000
-  sh_right_saucer_hit:
+  sh_saucer_right_hit:
     score: (5 - device.counters.right_saucer_ball_count.value) * 100 + device.counters.right_saucer_ball_count.value * 1000
 
 counters:
