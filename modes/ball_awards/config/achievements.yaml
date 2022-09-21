@@ -153,3 +153,22 @@ achievement_groups:
       - ac_ball_8
       - ac_ball_9
     events_when_all_completed: award_second_row_completed
+
+  ag_all_balls:
+    achievements:
+      - ac_ball_1
+      - ac_ball_2
+      - ac_ball_3
+      - ac_ball_4
+      - ac_ball_5
+      - ac_ball_6
+      - ac_ball_7
+      - ac_ball_8
+      - ac_ball_9
+      - ac_ball_10
+      - ac_ball_11
+      - ac_ball_12
+      - ac_ball_13
+      - ac_ball_14
+      - ac_ball_15
+      events_when_all_completed: award_all_balls_completed
