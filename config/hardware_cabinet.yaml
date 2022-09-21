@@ -10,3 +10,9 @@ switches:
   s_start:
     number: 0-2
     tags: start
+
+coils:
+  knocker:
+    number: 00
+    default_pulse_ms: 20
+    max_pulse_ms: 100

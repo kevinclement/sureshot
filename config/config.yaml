@@ -14,6 +14,7 @@ modes:
   - top_row_completed
   - saucer
   - second_row_completed
+  - all_balls_completed
 
 game:
   balls_per_game: 5

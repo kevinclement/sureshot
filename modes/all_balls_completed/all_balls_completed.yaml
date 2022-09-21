@@ -4,4 +4,3 @@
 mode:
   start_events: award_all_balls_completed
   priority: 400
-
