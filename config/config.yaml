@@ -17,5 +17,8 @@ modes:
   - second_row_completed
   - all_balls_completed
 
+show_player:
+  game_started: general_illumination
+
 game:
   balls_per_game: 5
