@@ -269,3 +269,9 @@ lights:
   l_popbumper_right:
     previous: l_popbumper_middle
     type: rgb
+
+light_settings:
+  default_color_correction_profile: correction_profile_warm_white
+  color_correction_profiles:
+    correction_profile_warm_white:
+      whitepoint: [0.93, 0.92, 0.84]
