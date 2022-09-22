@@ -17,3 +17,21 @@ coils:
     default_pulse_power: 0.5
   c_score_inc_1000:
     number: 3-1
+
+lights:
+  # Ball indicators
+  l_ball_1:
+    number: 2-0
+    type: grb
+  l_ball_2:
+    previous: l_ball_1
+    type: grb
+  l_ball_3:
+    previous: l_ball_2
+    type: grb
+  l_ball_4:
+    previous: l_ball_3
+    type: grb
+  l_ball_5:
+    previous: l_ball_4
+    type: grb

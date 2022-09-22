@@ -12,6 +12,7 @@ modes:
   - all_balls_completed
   - base
   - ball_awards
+  - ball_indicator
   - bonus
   - top_row_completed
   - saucer
