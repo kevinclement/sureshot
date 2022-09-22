@@ -12,7 +12,14 @@ switches:
     tags: start
 
 coils:
+  # Cabinet 0804
+  c_xylophone_low:
+    number: 0-2
+  c_xylophone_mid:
+    number: 0-3
+  c_xylophone_high:
+    number: 0-1
   c_knocker:
-    number: 00
+    number: 0-0
     default_pulse_ms: 20
     max_pulse_ms: 100
