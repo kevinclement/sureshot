@@ -1,1 +1,4 @@
 #config_version=5
+
+show_player:
+  mode_attract_started: general_illumination
