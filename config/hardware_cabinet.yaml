@@ -12,7 +12,7 @@ switches:
     tags: start
 
 coils:
-  knocker:
+  c_knocker:
     number: 00
     default_pulse_ms: 20
     max_pulse_ms: 100
