@@ -1,11 +1,11 @@
 #config_version=5
 
 hardware:
-  platform: smart_virtual
+  platform: fast
   driverboards: fast
 
 fast:
-  ports: autodetect
+  ports: /dev/tty.usbserial-2101, /dev/tty.usbserial-2102
   # These are defaults, but mpfls thinks they are required
   default_normal_debounce_open: 10ms
   default_normal_debounce_close: 10ms

@@ -252,8 +252,8 @@ switch:
     y: 0.4002828854314003
   s_standup_right:
     shape: CIRCLE
-    x: 0.7972972972972974
-    y: 0.5304054054054055
+    x: 0.7892503536067893
+    y: 0.5318246110325319
   s_start:
     shape: CIRCLE
     size: 0.05

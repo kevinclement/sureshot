@@ -8,6 +8,7 @@ config:
   - virtual.yaml
 
 modes:
+  - all_balls_completed
   - base
   - ball_awards
   - bonus
