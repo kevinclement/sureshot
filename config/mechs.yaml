@@ -36,7 +36,7 @@ ball_devices:
 autofire_coils:
   ac_slightshot_left:
     coil: c_sling_left
-    switch: s_sling_right
+    switch: s_sling_left
   ac_slightshot_right:
     coil: c_sling_right
     switch: s_sling_right

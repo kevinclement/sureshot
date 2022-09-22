@@ -15,10 +15,13 @@ coils:
   # Cabinet 0804
   c_xylophone_low:
     number: 0-2
+    default_pulse_ms: 100
   c_xylophone_mid:
     number: 0-3
+    default_pulse_ms: 100
   c_xylophone_high:
     number: 0-1
+    default_pulse_ms: 100
   c_knocker:
     number: 0-0
     default_pulse_ms: 20
