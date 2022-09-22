@@ -15,9 +15,9 @@ variable_player:
     score: 500
 
 coil_player:
-  sg_slings_hit: c_xylophone_high
-  sg_pops_top_hit: c_xylophone_high
-  sg_pops_bottom_hit: c_xylophone_high
+  sg_slings_hit: c_xylophone_low
+  sg_pops_top_hit: c_xylophone_mid
+  sg_pops_bottom_hit: c_xylophone_mid
 
 config:
   - shots.yaml

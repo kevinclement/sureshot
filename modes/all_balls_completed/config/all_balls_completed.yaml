@@ -21,7 +21,7 @@ shots:
   sh_special_right:
     profile: sp_specials
     hit_events: balldevice_bd_saucer_right_ball_entered
-    advance_events: mode_all_balls_completed_started
+    advance_events: light_special_right
     show_tokens:
       leds: l_special_right
 
@@ -38,6 +38,13 @@ shot_groups:
   sg_specials:
     shots: sh_special_right, sh_special_left, sh_special_top
     rotate_events: sg_slings_hit
+
+counters:
+  award_all_balls_completed_entered:
+    count_events: mode_all_balls_completed_started
+    count_complete_value: 1
+    events_when_complete: light_special_right
+    persist_state: true
 
 coil_player:
   sg_specials_lit_hit: c_knocker

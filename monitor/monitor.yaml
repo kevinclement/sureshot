@@ -233,7 +233,7 @@ switch:
   s_sling_top_left:
     shape: RECTANGLE
     size: 0.1
-    x: 0.10466760961810467
+    x: 0.11315417256011316
     y: 0.3493635077793494
   s_sling_top_right:
     shape: RECTANGLE
