@@ -35,3 +35,7 @@ lights:
   l_ball_5:
     previous: l_ball_4
     type: grb
+
+  l_gameover:
+    previous: l_ball_5
+    type: grb

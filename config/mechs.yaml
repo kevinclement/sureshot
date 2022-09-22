@@ -70,6 +70,12 @@ score_reel_groups:
     #chimes: c_xylophone_high, c_xylophone_mid, c_xylophone_low, None
     chimes: None, c_xylophone_mid, None, None
 
+light_player:
+  game_starting:
+    l_gameover:
+      color: stop
+  game_ended: l_gameover
+
 playfields:
   playfield:
     tags: default
