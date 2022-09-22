@@ -24,6 +24,7 @@ switches:
   s_right_outlane:
     number: 1-6
     tags: playfield_active
+
   # Upper playfield 3208
   s_sling_left:
     number: 2-0

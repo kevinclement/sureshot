@@ -2,6 +2,7 @@
 
 config:
   - platform_fast.yaml
+  - hardware_backbox.yaml
   - hardware_cabinet.yaml
   - hardware_playfield.yaml
   - mechs.yaml

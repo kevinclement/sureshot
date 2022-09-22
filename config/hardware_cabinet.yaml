@@ -16,12 +16,15 @@ coils:
   c_xylophone_low:
     number: 0-2
     default_pulse_ms: 10
+    default_pulse_power: 0.5
   c_xylophone_mid:
     number: 0-3
     default_pulse_ms: 10
+    default_pulse_power: 0.5
   c_xylophone_high:
     number: 0-1
     default_pulse_ms: 10
+    default_pulse_power: 0.5
   c_knocker:
     number: 0-0
     default_pulse_ms: 20

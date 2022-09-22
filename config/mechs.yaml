@@ -50,6 +50,26 @@ autofire_coils:
     coil: c_popbumper_right
     switch: s_popbumper_right
 
+score_reels:
+  # sr_1000:
+  #   coil_inc: c_score_inc_1000
+  #   switch_0: s_score_zero_1000
+  sr_100:
+    coil_inc: c_score_inc_100
+    switch_0: s_score_zero_100
+    repeat_pulse_time: 150ms
+  # sr_10:
+  #   coil_inc: c_score_inc_10
+  #   switch_0: s_score_zero_10
+
+score_reel_groups:
+  srg_score:
+    #reels: sr_1000, sr_100, sr_10, None
+    reels: None, sr_100, None, None
+    tags: player1, player2, player3, player4
+    #chimes: c_xylophone_high, c_xylophone_mid, c_xylophone_low, None
+    chimes: None, c_xylophone_mid, None, None
+
 playfields:
   playfield:
     tags: default
