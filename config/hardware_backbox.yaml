@@ -39,3 +39,35 @@ lights:
   l_gameover:
     previous: l_ball_5
     type: grb
+
+  # Match
+  l_match_00:
+    previous: l_gameover
+    type: grb
+  l_match_10:
+    previous: l_match_00
+    type: grb
+  l_match_20:
+    previous: l_match_10
+    type: grb
+  l_match_30:
+    previous: l_match_20
+    type: grb
+  l_match_40:
+    previous: l_match_30
+    type: grb
+  l_match_50:
+    previous: l_match_40
+    type: grb
+  l_match_60:
+    previous: l_match_50
+    type: grb
+  l_match_70:
+    previous: l_match_60
+    type: grb
+  l_match_80:
+    previous: l_match_70
+    type: grb
+  l_match_90:
+    previous: l_match_80
+    type: grb

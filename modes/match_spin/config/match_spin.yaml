@@ -1,0 +1,76 @@
+#config_version=5
+
+##! mode: match_spin
+mode:
+  start_events: no_match, has_match
+  stop_events: match_spin_completed
+  priority: 1100
+  game_mode: false
+
+show_player:
+  mode_match_spin_started:
+    match_spin:
+      speed: 10
+      events_when_looped: match_spin_looped
+      events_when_stopped: match_spin_stopped
+
+  match_number_lit{device.counters.match_spin_count.completed==True}:
+    match_hold{machine.match_number==0}:
+      loops: 0
+      events_when_completed: match_spin_completed
+      show_tokens:
+        leds: l_match_00
+    match_hold{machine.match_number==10}:
+      loops: 0
+      events_when_completed: match_spin_completed
+      show_tokens:
+        leds: l_match_10
+    match_hold{machine.match_number==20}:
+      loops: 0
+      events_when_completed: match_spin_completed
+      show_tokens:
+        leds: l_match_20
+    match_hold{machine.match_number==30}:
+      loops: 0
+      events_when_completed: match_spin_completed
+      show_tokens:
+        leds: l_match_30
+    match_hold{machine.match_number==40}:
+      loops: 0
+      events_when_completed: match_spin_completed
+      show_tokens:
+        leds: l_match_40
+    match_hold{machine.match_number==50}:
+      loops: 0
+      events_when_completed: match_spin_completed
+      show_tokens:
+        leds: l_match_50
+    match_hold{machine.match_number==60}:
+      loops: 0
+      events_when_completed: match_spin_completed
+      show_tokens:
+        leds: l_match_60
+    match_hold{machine.match_number==70}:
+      loops: 0
+      events_when_completed: match_spin_completed
+      show_tokens:
+        leds: l_match_70
+    match_hold{machine.match_number==80}:
+      loops: 0
+      events_when_completed: match_spin_completed
+      show_tokens:
+        leds: l_match_80
+    match_hold{machine.match_number==90}:
+      loops: 0
+      events_when_completed: match_spin_completed
+      show_tokens:
+        leds: l_match_90
+
+    match_spin:
+      action: stop
+
+counters:
+  match_spin_count:
+    count_events: match_spin_looped
+    count_complete_value: 5
+    reset_on_complete: false

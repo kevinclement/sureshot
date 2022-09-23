@@ -1,0 +1,12 @@
+#config_version=5
+
+##! mode: match
+queue_relay_player:
+  match_no_match:
+    post: no_match
+    wait_for: mode_match_spin_stopped
+    pass_args: true
+  match_has_match:
+    post: has_match
+    wait_for: mode_match_spin_stopped
+    pass_args: true
