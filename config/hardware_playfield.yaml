@@ -128,7 +128,7 @@ lights:
     number: 1-0
     type: grb
   l_3_top:
-    previous: l_5_top
+    previous: l_popbumper_right
     type: grb
   l_1:
     previous: l_3_top
@@ -146,7 +146,7 @@ lights:
     previous: l_4_top
     type: grb
   l_10:
-    previous: l_special_left
+    previous: l_popbumper_left
     type: grb
   l_6:
     previous: l_10
@@ -201,15 +201,15 @@ lights:
     previous: l_triangle_6
     type: grb
 
-  l_15:
-    previous: l_triangle_4
-    type: grb
   l_12:
-    previous: l_15
+    previous: l_popbumper_middle
+    type: grb
+  l_15:
+    previous: l_12 
     type: grb
 
   l_triangle_2:
-    previous: l_12
+    previous: l_15
     type: grb
   l_triangle_1:
     previous: l_triangle_2
@@ -269,13 +269,13 @@ lights:
 
   # Pops
   l_popbumper_left:
-    previous: l_special_right
+    previous: l_special_left
     type: grb
   l_popbumper_middle:
-    previous: l_popbumper_left
+    previous: l_triangle_4
     type: grb
   l_popbumper_right:
-    previous: l_popbumper_middle
+    previous: l_5_top
     type: grb
 
   # GI
