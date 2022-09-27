@@ -24,6 +24,9 @@ coils:
   c_score_inc_10000:
     number: 3-1
     default_pulse_power: 0.5
+  c_gi_lights:
+    number: 3-5
+    allow_enable: true
 
 lights:
   # Ball indicators
@@ -78,3 +81,8 @@ lights:
   l_match_90:
     number: 2-0
     type: grb
+
+  # GI
+  l_backbox_gi:
+    number: c_gi_lights
+    platform: drivers

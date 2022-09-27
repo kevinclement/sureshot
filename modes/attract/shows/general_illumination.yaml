@@ -30,3 +30,5 @@
         color: white
       l_gi_sling_top_right:
         color: white
+      l_backbox_gi:
+        color: fff # NOTE: isn't RGB, just on (fff) and off (000)
