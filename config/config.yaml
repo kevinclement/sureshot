@@ -8,6 +8,9 @@ config:
   - mechs.yaml
   - virtual.yaml
 
+mpf: 
+  report_crashes: never
+
 modes:
   - all_balls_completed
   - base
