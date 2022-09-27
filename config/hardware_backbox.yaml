@@ -28,53 +28,53 @@ coils:
 lights:
   # Ball indicators
   l_ball_1:
-    number: 2-0
+    number: 2-11
     type: grb
   l_ball_2:
-    previous: l_ball_1
+    number: 2-12
     type: grb
   l_ball_3:
-    previous: l_ball_2
+    number: 2-13
     type: grb
   l_ball_4:
-    previous: l_ball_3
+    number: 2-14
     type: grb
   l_ball_5:
-    previous: l_ball_4
+    number: 2-15
     type: grb
 
   l_gameover:
-    previous: l_ball_5
+    number: 2-10
     type: grb
 
   # Match
   l_match_00:
-    previous: l_gameover
+    number: 2-9
     type: grb
   l_match_10:
-    previous: l_match_00
+    number: 2-8
     type: grb
   l_match_20:
-    previous: l_match_10
+    number: 2-7
     type: grb
   l_match_30:
-    previous: l_match_20
+    number: 2-6
     type: grb
   l_match_40:
-    previous: l_match_30
+    number: 2-5
     type: grb
   l_match_50:
-    previous: l_match_40
+    number: 2-4
     type: grb
   l_match_60:
-    previous: l_match_50
+    number: 2-3
     type: grb
   l_match_70:
-    previous: l_match_60
+    number: 2-2
     type: grb
   l_match_80:
-    previous: l_match_70
+    number: 2-1
     type: grb
   l_match_90:
-    previous: l_match_80
+    number: 2-0
     type: grb
