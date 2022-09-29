@@ -5,7 +5,8 @@ hardware:
   driverboards: fast
 
 fast:
-  ports: /dev/tty.usbserial-2101, /dev/tty.usbserial-2102
+  # TODO: would be nice to have this be conditional based on platform_system
+  ports: /dev/ttyUSB1,/dev/ttyUSB2
   hardware_led_fade_time: 100ms
   # These are defaults, but mpfls thinks they are required
   default_normal_debounce_open: 10ms
