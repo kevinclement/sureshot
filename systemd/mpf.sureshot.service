@@ -1,0 +1,15 @@
+[Unit]
+Description=Mission Pinball SureShot Game Service
+After=multi-user.target
+
+[Service]
+WorkingDirectory=/home/pi/code/sureshot/
+ExecStart=/usr/local/bin/mpf -tbP
+Restart=always
+RestartSec=7
+#StandardOutput=null
+#StandardError=null
+SyslogIdentifier=mpf-sureshot
+
+[Install]
+WantedBy=multi-user.target
