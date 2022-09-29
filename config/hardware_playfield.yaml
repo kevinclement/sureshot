@@ -85,7 +85,6 @@ switches:
 
 coils:
   # Lower playfield 0804
-  # TODO: Adjust ring numbers
   c_flipper_left_main:
     number: 1-2
     default_pulse_ms: 15
@@ -124,44 +123,66 @@ coils:
 
 lights:
   # Inserts
-  l_5_top:
-    number: 1-0
+  l_2_top:
+    previous: l_special_top
     type: grb
   l_3_top:
     previous: l_popbumper_right
     type: grb
-  l_1:
-    previous: l_3_top
+  l_4_top:
+    previous: l_2_top
+    type: grb
+  l_5_top:
+    number: 1-0
     type: grb
   l_special_top:
     previous: l_1
     type: grb
-  l_2_top:
-    previous: l_special_top
-    type: grb
-  l_4_top:
-    previous: l_2_top
-    type: grb
-  l_special_left:
-    previous: l_4_top
-    type: grb
-  l_10:
-    previous: l_popbumper_left
-    type: grb
-  l_6:
-    previous: l_10
-    type: grb
-  l_13:
-    previous: l_6
-    type: grb
-  l_4:
-    previous: l_13
+  
+  l_1:
+    previous: l_3_top
     type: grb
   l_2:
     previous: l_4
     type: grb
+  l_3:
+    previous: l_8
+    type: grb
+  l_4:
+    previous: l_13
+    type: grb
+  l_5:
+    previous: l_3
+    type: grb
+  l_6:
+    previous: l_10
+    type: grb
   l_7:
     previous: l_2
+    type: grb
+  l_8:
+    previous: l_triangle_11
+    type: grb
+  l_9:
+    previous: l_14
+    type: grb
+  l_10:
+    previous: l_popbumper_left
+    type: grb
+  l_11:
+    previous: l_9
+    type: grb
+  l_12:
+    previous: l_popbumper_middle
+    type: grb
+  l_13:
+    previous: l_6
+    type: grb
+  l_14:
+    previous: l_5
+    type: grb
+  l_15:
+    previous: l_12 
     type: grb
 
   # Trough
@@ -185,84 +206,56 @@ lights:
     type: grb
 
   # Triangle
-  l_triangle_15:
-    previous: l_trough_6
-    type: grb
-  l_triangle_13:
-    previous: l_triangle_15
-    type: grb
-  l_triangle_10:
-    previous: l_triangle_13
-    type: grb
-  l_triangle_6:
-    previous: l_triangle_10
-    type: grb
-  l_triangle_4:
-    previous: l_triangle_6
-    type: grb
-
-  l_12:
-    previous: l_popbumper_middle
-    type: grb
-  l_15:
-    previous: l_12 
-    type: grb
-
-  l_triangle_2:
-    previous: l_15
-    type: grb
   l_triangle_1:
     previous: l_triangle_2
+    type: grb
+  l_triangle_2:
+    previous: l_15
     type: grb
   l_triangle_3:
     previous: l_triangle_1
     type: grb
+  l_triangle_4:
+    previous: l_triangle_6
+    type: grb
   l_triangle_5:
     previous: l_triangle_3
     type: grb
-
-  l_triangle_9:
-    previous: l_triangle_5
-    type: grb
-  l_triangle_8:
-    previous: l_triangle_9
+  l_triangle_6:
+    previous: l_triangle_10
     type: grb
   l_triangle_7:
     previous: l_triangle_8
     type: grb
-
-  l_triangle_12:
-    previous: l_triangle_7
+  l_triangle_8:
+    previous: l_triangle_9
     type: grb
-
-  l_triangle_14:
-    previous: l_triangle_12
+  l_triangle_9:
+    previous: l_triangle_5
     type: grb
-
+  l_triangle_10:
+    previous: l_triangle_13
+    type: grb
   l_triangle_11:
     previous: l_triangle_14
     type: grb
-
-  l_8:
-    previous: l_triangle_11
+  l_triangle_12:
+    previous: l_triangle_7
     type: grb
-  l_3:
-    previous: l_8
+  l_triangle_13:
+    previous: l_triangle_15
     type: grb
-  l_5:
-    previous: l_3
+  l_triangle_14:
+    previous: l_triangle_12
     type: grb
-  l_14:
-    previous: l_5
+  l_triangle_15:
+    previous: l_trough_6
     type: grb
-
-  l_9:
-    previous: l_14
+  
+  # Saucers
+  l_special_left:
+    previous: l_4_top
     type: grb
-  l_11:
-    previous: l_9
-    type: grb
-
   l_special_right:
     previous: l_11
     type: grb
