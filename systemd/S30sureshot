@@ -3,7 +3,7 @@
 DAEMON="sureshot"
 PIDFILE="/var/run/$DAEMON.pid"
 
-SYSLOGD_ARGS=""
+SYSLOGD_ARGS="-tbP"
 
 # shellcheck source=/dev/null
 [ -r "/etc/default/$DAEMON" ] && . "/etc/default/$DAEMON"
@@ -13,7 +13,7 @@ SYSLOGD_ARGS=""
 start() {
     printf 'Starting %s: ' "$DAEMON" 
     # shellcheck disable=SC2086 # we need the word splitting
-    start-stop-daemon -b -m -S -q -p "$PIDFILE" -x "/sbin/$DAEMON" \
+    start-stop-daemon -b -m -S -q -p "$PIDFILE" -x "/bin/mpf" \
             -- -n $SYSLOGD_ARGS
     status=$?
     if [ "$status" -eq 0 ]; then
