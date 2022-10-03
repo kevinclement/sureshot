@@ -18,6 +18,10 @@ MPF_EXE="$MPF_EXE" && [ -z "$MPF_EXE" ] && MPF_EXE="/usr/bin/mpf"
 # Setup a working directory if its not specified in etc file
 WD="$WD" && [ -z "$WD" ] && WD="/code/sureshot"
 
+# this was needed on my slim system, but didn't seen to work on modern one
+# it required a chdir param that the slim system didn't have ??
+cd $WD
+
 # BusyBox' syslogd does not create a pidfile, so pass "-n" in the command line
 # and use "-m" to instruct start-stop-daemon to create one.
 start() {
@@ -25,8 +29,8 @@ start() {
 
     printf 'Starting %s: ' "$DAEMON" 
     umask 077
-    start-stop-daemon -S -q --make-pidfile -p $PIDFILE \
-        --chdir $WD --exec $MPF_EXE -- $MPF_ARGS
+    start-stop-daemon -S -q -m -p $PIDFILE \
+        --exec $MPF_EXE -- $MPF_ARGS
     
     status=$?
     if [ "$status" -eq 0 ]; then
@@ -39,8 +43,9 @@ start() {
 
 stop() {
     printf 'Stopping %s: ' "$DAEMON" 
-    start-stop-daemon -K -q --remove-pidfile -p $PIDFILE
+    start-stop-daemon -K -q -p $PIDFILE
     [ $? = 0 ] && echo "OK" || echo "FAIL"
+    rm $PIDFILE
 }
 restart() {
     stop
