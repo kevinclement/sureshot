@@ -1,75 +1,55 @@
 #!/bin/sh
 
-# set working directory
-cd /code/sureshot
+DAEMON="sureshot"
+PIDFILE="/var/run/$DAEMON.pid"
 
-SCRIPT="mpf -tbP"
-RUNAS=root
+SYSLOGD_ARGS=""
 
-PIDFILE=/var/run/sureshot.pid
-LOGFILE=/var/log/sureshot.log
+# shellcheck source=/dev/null
+[ -r "/etc/default/$DAEMON" ] && . "/etc/default/$DAEMON"
 
+# BusyBox' syslogd does not create a pidfile, so pass "-n" in the command line
+# and use "-m" to instruct start-stop-daemon to create one.
 start() {
-  if [ -f $PIDFILE ] && [ -s $PIDFILE ] && kill -0 $(cat $PIDFILE); then
-    echo 'Service already running' >&2
-    return 1
-  fi
-  echo 'Starting service…' >&2
-  local CMD="$SCRIPT &> \"$LOGFILE\" & echo \$!"
-  su -c "$CMD" $RUNAS > "$PIDFILE"
- # Try with this command line instead of above if not workable
- # su -s /bin/sh $RUNAS -c "$CMD" > "$PIDFILE"
- 
-  sleep 2
-  PID=$(cat $PIDFILE)
-    if pgrep -u $RUNAS -f $NAME > /dev/null
-    then
-      echo "$NAME is now running, the PID is $PID"
+    printf 'Starting %s: ' "$DAEMON" 
+    # shellcheck disable=SC2086 # we need the word splitting
+    start-stop-daemon -b -m -S -q -p "$PIDFILE" -x "/sbin/$DAEMON" \
+            -- -n $SYSLOGD_ARGS
+    status=$?
+    if [ "$status" -eq 0 ]; then
+            echo "OK"
     else
-      echo ''
-      echo "Error! Could not start $NAME!"
+            echo "FAIL"
     fi
+    return "$status"
 }
 
 stop() {
-  if [ ! -f "$PIDFILE" ] || ! kill -0 $(cat "$PIDFILE"); then
-    echo 'Service not running' >&2
-    return 1
-  fi
-  echo 'Stopping service…' >&2
-  kill -15 $(cat "$PIDFILE") && rm -f "$PIDFILE"
-  echo 'Service stopped' >&2
-}
-
-status() {
-    printf "%-50s" "Checking sureshot..."
-    if [ -f $PIDFILE ] && [ -s $PIDFILE ]; then
-        PID=$(cat $PIDFILE)
-            if [ -z "$(ps axf | grep ${PID} | grep -v grep)" ]; then
-                printf "%s\n" "The process appears to be dead but pidfile still exists"
-            else    
-                echo "Running, the PID is $PID"
-            fi
+    printf 'Stopping %s: ' "$DAEMON"
+    start-stop-daemon -K -q -p "$PIDFILE"
+    status=$?
+    if [ "$status" -eq 0 ]; then
+            rm -f "$PIDFILE"
+            echo "OK"
     else
-        printf "%s\n" "Service not running"
+            echo "FAIL"
     fi
+    return "$status"
 }
 
+restart() {
+    stop
+    sleep 1
+    start
+}
 
 case "$1" in
-  start)
-    start
-    ;;
-  stop)
-    stop
-    ;;
-  status)
-    status
-    ;;
-  restart)
-    stop
-    start
-    ;;
-  *)
-    echo "Usage: $0 {start|stop|status|restart}"
+    start|stop|restart)
+            "$1";;
+    reload)
+            # Restart, since there is no true "reload" feature.
+            restart;;
+    *)
+            echo "Usage: $0 {start|stop|restart|reload}"
+            exit 1
 esac
