@@ -12,9 +12,11 @@ modprobe ftdi_sio
 # Allow a few customizations from a config file if we want
 test -r /etc/default/$DAEMON && . /etc/default/$DAEMON
 
-# move to our working directory
-[ -z "$WD" ] && $WD = "/code/sureshot"
-cd $WD
+# Setup mpf binary if its not already in etc
+MPF_EXE="$MPF_EXE" && [ -z "$MPF_EXE" ] && MPF_EXE="/usr/bin/mpf"
+
+# Setup a working directory if its not specified in etc file
+WD="$WD" && [ -z "$WD" ] && WD="/code/sureshot"
 
 # BusyBox' syslogd does not create a pidfile, so pass "-n" in the command line
 # and use "-m" to instruct start-stop-daemon to create one.
@@ -23,8 +25,8 @@ start() {
 
     printf 'Starting %s: ' "$DAEMON" 
     umask 077
-    start-stop-daemon -S -q -p $PIDFILE \
-        --exec /usr/bin/mpf -- $MPF_ARGS
+    start-stop-daemon -S -q --make-pidfile -p $PIDFILE \
+        --chdir $WD --exec $MPF_EXE -- $MPF_ARGS
     
     status=$?
     if [ "$status" -eq 0 ]; then
@@ -37,15 +39,10 @@ start() {
 
 stop() {
     printf 'Stopping %s: ' "$DAEMON" 
-    start-stop-daemon -K -q -p $PIDFILE
+    start-stop-daemon -K -q --remove-pidfile -p $PIDFILE
     [ $? = 0 ] && echo "OK" || echo "FAIL"
 }
 restart() {
-    stop
-    start
-}
-
-:restart() {
     stop
     sleep 1
     start
