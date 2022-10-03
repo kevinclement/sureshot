@@ -5,6 +5,13 @@ PIDFILE="/var/run/$DAEMON.pid"
 
 SYSLOGD_ARGS="-tbP"
 
+# HACK: kind of a hack to do it here, but the OS is limited
+# and I'd need to just create another file like this to do it
+#
+# install module into the kernel we need for USB serial connection
+modprobe ftdi_sio
+
+
 # shellcheck source=/dev/null
 [ -r "/etc/default/$DAEMON" ] && . "/etc/default/$DAEMON"
 
