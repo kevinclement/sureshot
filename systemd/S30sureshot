@@ -1,7 +1,12 @@
 #!/bin/sh
 
-DAEMON="sureshot"
-PIDFILE="/var/run/$DAEMON.pid"
+NAME=sureshot
+DIR=/code/sureshot
+PIDFILE=/var/run/$NAME.pid
+DAEMON=/usr/bin/mpf
+DAEMON_ARGS=" -tbP"
+LOG=/var/log/$NAME.log
+common_opts="-q -p $PIDFILE"
 
 # HACK: kind of a hack to do it here, but the OS is limited
 # and I'd need to just create another file like this to do it
@@ -9,61 +14,39 @@ PIDFILE="/var/run/$DAEMON.pid"
 # install module into the kernel we need for USB serial connection
 modprobe ftdi_sio
 
-# Allow a few customizations from a config file if we want
-test -r /etc/default/$DAEMON && . /etc/default/$DAEMON
+# this worked on this busybox.  normally you have to pass it to the s-s-daemon
+cd $DIR
 
-# Setup mpf binary if its not already in etc
-MPF_EXE="$MPF_EXE" && [ -z "$MPF_EXE" ] && MPF_EXE="/usr/bin/mpf"
-
-# Setup a working directory if its not specified in etc file
-WD="$WD" && [ -z "$WD" ] && WD="/code/sureshot"
-
-# this was needed on my slim system, but didn't seen to work on modern one
-# it required a chdir param that the slim system didn't have ??
-cd $WD
-
-# BusyBox' syslogd does not create a pidfile, so pass "-n" in the command line
-# and use "-m" to instruct start-stop-daemon to create one.
-start() {
-    MPF_ARGS="$MPF_ARGS -tbP"
-
-    printf 'Starting %s: ' "$DAEMON" 
-    umask 077
-    start-stop-daemon -S -q -m -p $PIDFILE \
-        --exec $MPF_EXE -- $MPF_ARGS
-    
-    status=$?
-    if [ "$status" -eq 0 ]; then
-        echo "OK"
-    else
-        echo "FAIL"
-    fi
-    return "$status"
+do_start(){
+    start-stop-daemon $common_opts -b -S -m -x \
+        /bin/sh -- -c "exec $DAEMON $DAEMON_ARGS > $LOG 2>&1"
 }
 
-stop() {
-    printf 'Stopping %s: ' "$DAEMON" 
-    start-stop-daemon -K -q -p $PIDFILE
-    [ $? = 0 ] && echo "OK" || echo "FAIL"
-    rm $PIDFILE
-}
-restart() {
-    stop
-    sleep 1
-    start
+do_stop(){
+    start-stop-daemon -K $common_opts 
+    rm -f $PIDFILE >/dev/null 2>&1
 }
 
 case "$1" in
   start)
-        start
+        echo -n "Starting daemon: "$NAME
+        do_start
+        echo "."
         ;;
   stop)
-        stop
+        echo -n "Stopping daemon: "$NAME
+        do_stop
+        echo "."
         ;;
-  restart|reload)
-        restart
+  restart)
+        echo -n "Restarting daemon: "$NAME
+        do_stop
+        do_start
+        echo "."
         ;;
   *)
-        echo "Usage: $0 {start|stop|restart}"
+        echo "Usage: "$1" {start|stop|restart}"
         exit 1
 esac
+
+exit 0
