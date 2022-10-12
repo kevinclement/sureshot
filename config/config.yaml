@@ -23,6 +23,7 @@ modes:
   - saucer
   - second_row_completed
   - all_balls_completed
+  - switch_light_control
 
 show_player:
   game_started: general_illumination

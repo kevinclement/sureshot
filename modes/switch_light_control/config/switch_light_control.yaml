@@ -1,0 +1,7 @@
+#config_version=5
+
+mode:
+    game_mode: false
+    start_events: init_done
+    code: switch_light_control.Trigger_Pi
+    priority: 100

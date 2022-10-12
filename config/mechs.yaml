@@ -6,13 +6,11 @@ flippers:
     hold_coil: c_flipper_left_hold
     activation_switch: s_left_flipper
     eos_switch: s_left_flipper_eos
-    debug: true
   right_flipper:
     main_coil: c_flipper_right_main
     hold_coil: c_flipper_right_hold
     activation_switch: s_right_flipper
     eos_switch: s_right_flipper_eos
-    debug: true
 
 ball_devices:
   bd_drain:
@@ -21,7 +19,6 @@ ball_devices:
     eject_targets: bd_plunger_lane
     tags: drain, home, trough
     eject_timeouts: 3s
-    debug: true
   bd_plunger_lane:
     ball_switches: s_plunger
     mechanical_eject: true
