@@ -26,9 +26,13 @@ ball_devices:
   bd_saucer_left:
     ball_switches: s_saucer_left
     eject_coil: c_saucer_left
+    eject_timeouts: 2s
+    entrance_count_delay: 1s
   bd_saucer_right:
     ball_switches: s_saucer_right
     eject_coil: c_saucer_right
+    eject_timeouts: 2s
+    entrance_count_delay: 1s
 
 autofire_coils:
   ac_slightshot_left:
@@ -52,24 +56,29 @@ score_reels:
     coil_inc: c_score_inc_10
     switch_0: s_score_zero_10
     repeat_pulse_time: 150ms
+    hw_confirm_time: 10ms
   sr_100:
     coil_inc: c_score_inc_100
     switch_0: s_score_zero_100
     repeat_pulse_time: 150ms
+    hw_confirm_time: 10ms
   sr_1000:
     coil_inc: c_score_inc_1000
     switch_0: s_score_zero_1000
     repeat_pulse_time: 150ms
+    hw_confirm_time: 10ms
   sr_10000:
     coil_inc: c_score_inc_10000
     switch_0: s_score_zero_10000
     repeat_pulse_time: 150ms
+    hw_confirm_time: 10ms
 
 score_reel_groups:
   srg_score:
     reels: sr_10000, sr_1000, sr_100, sr_10, None
     tags: player1, player2, player3, player4
-    chimes: None, c_xylophone_high, c_xylophone_mid, c_xylophone_low, None
+    
+    chimes: c_xylophone_high, c_xylophone_low, c_xylophone_mid, c_xylophone_high, None
 
 light_player:
   game_starting:

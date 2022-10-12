@@ -14,16 +14,16 @@ coils:
   # Backbox 3208
   c_score_inc_10:
     number: 3-0
-    default_pulse_power: 0.5
+    default_pulse_ms: 6ms
   c_score_inc_100:
     number: 3-2
-    default_pulse_power: 0.5
+    default_pulse_ms: 6ms
   c_score_inc_1000:
     number: 3-3
-    default_pulse_power: 0.5
+    default_pulse_ms: 6ms
   c_score_inc_10000:
     number: 3-1
-    default_pulse_power: 0.5
+    default_pulse_ms: 6ms
   c_gi_lights:
     number: 3-5
     allow_enable: true
