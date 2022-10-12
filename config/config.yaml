@@ -30,3 +30,4 @@ show_player:
 
 game:
   balls_per_game: 5
+  allow_start_with_loose_balls: true
