@@ -2,3 +2,4 @@
 data/
 logs/
 mpf
+__pycache__/
