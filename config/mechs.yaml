@@ -79,9 +79,3 @@ score_reel_groups:
     tags: player1, player2, player3, player4
     
     chimes: c_xylophone_high, c_xylophone_low, c_xylophone_mid, c_xylophone_high, None
-
-playfields:
-  playfield:
-    tags: default
-    default_source_device: bd_plunger_lane
-    enable_ball_search: true

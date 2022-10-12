@@ -36,5 +36,16 @@ show_player:
     trough_blink: play
   ball_search_stopped:
     trough_blink: stop
+
 game:
   balls_per_game: 5
+
+playfields:
+  playfield:
+    tags: default
+    default_source_device: bd_plunger_lane
+    enable_ball_search: true
+    ball_search_disable_events: balldevice_playfield_ball_enter
+    console_log: basic
+    file_log: basic
+
