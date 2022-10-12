@@ -84,3 +84,4 @@ playfields:
   playfield:
     tags: default
     default_source_device: bd_plunger_lane
+    enable_ball_search: true

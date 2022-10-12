@@ -32,6 +32,9 @@ show_player:
     gameover_blink: stop
   game_ended: 
     gameover_blink: play
-
+  ball_search_started:
+    trough_blink: play
+  ball_search_stopped:
+    trough_blink: stop
 game:
   balls_per_game: 5
