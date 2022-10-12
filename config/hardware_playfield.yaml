@@ -139,6 +139,7 @@ lights:
     type: grb
   l_special_top:
     previous: l_1
+    default_on_color: red
     type: grb
   
   l_1:
@@ -257,9 +258,11 @@ lights:
   # Saucers
   l_special_left:
     previous: l_4_top
+    default_on_color: red
     type: grb
   l_special_right:
     previous: l_11
+    default_on_color: red
     type: grb
 
   # Pops
