@@ -4,7 +4,7 @@ import time
 
 class Trigger_Pi(Mode):
 
-    def write_file(fname, txt):
+    def write_file(self, fname, txt):
         f = open(fname, "w")
         f.write(txt)
         f.close()
@@ -15,12 +15,12 @@ class Trigger_Pi(Mode):
         if exists("/sys/class/gpio/export"): 
             self.log.debug("Found gpio export, turning off LED Control")
             
-            write_file("/sys/class/gpio/export", "17")
-            write_file("/sys/class/gpio/gpio17/direction", "out")
-            write_file("/sys/class/gpio/gpio17/value", "1")
+            self.write_file("/sys/class/gpio/export", "17")
+            self.write_file("/sys/class/gpio/gpio17/direction", "out")
+            self.write_file("/sys/class/gpio/gpio17/value", "1")
             time.sleep(.4)
-            write_file("/sys/class/gpio/gpio17/value", "0")
-            write_file("/sys/class/gpio/unexport", "17")
+            self.write_file("/sys/class/gpio/gpio17/value", "0")
+            self.write_file("/sys/class/gpio/unexport", "17")
         else: 
             self.log.debug("NO gpio found, ignorning LED Control")
     
