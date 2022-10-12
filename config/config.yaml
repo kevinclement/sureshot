@@ -10,6 +10,7 @@ config:
 
 mpf: 
   report_crashes: never
+  default_light_hw_update_hz: 30
 
 modes:
   - all_balls_completed
@@ -26,8 +27,8 @@ modes:
   - switch_light_control
 
 show_player:
-  game_started: general_illumination
+  game_started: general_illumination, gameover_off
+  game_ended: gameover_blink
 
 game:
   balls_per_game: 5
-  allow_start_with_loose_balls: true
