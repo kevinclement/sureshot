@@ -1,6 +1,0 @@
-#show_version=5
-
-##! show: match_hold
-- duration: 5
-  lights: 
-    (leds): white

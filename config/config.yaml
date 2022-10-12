@@ -19,7 +19,6 @@ modes:
   - ball_indicator
   - bonus
   - match
-  - match_spin
   - top_row_completed
   - saucer
   - second_row_completed
@@ -29,9 +28,15 @@ modes:
 show_player:
   game_started: 
     general_illumination: play
-    gameover_blink: stop
-  game_ended: 
-    gameover_blink: play
+    game_over_blink: stop
+    match_blank: play
+    
+  game_ending:
+    match_blank: stop
+    game_over_tone:
+      loops: 0
+  game_ended:
+    game_over_blink: play
   ball_search_started:
     trough_blink: play
   ball_search_stopped:

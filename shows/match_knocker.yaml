@@ -1,0 +1,5 @@
+#show_version=5
+
+- duration: 500ms
+  coils:
+      c_knocker: pulse

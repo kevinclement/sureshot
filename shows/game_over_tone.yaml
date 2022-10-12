@@ -1,0 +1,32 @@
+#show_version=5
+
+- duration: 170ms
+  coils:
+      c_xylophone_low: 
+          action: pulse
+          max_wait_ms: 50
+- duration: 170ms
+  coils:
+      c_xylophone_mid: 
+          action: pulse
+          max_wait_ms: 50
+- duration: 170ms
+  coils:
+      c_xylophone_low: 
+          action: pulse
+          max_wait_ms: 50
+- duration: 170ms
+  coils:
+      c_xylophone_high: 
+          action: pulse
+          max_wait_ms: 50
+- duration: 170ms
+  coils:
+      c_xylophone_high: 
+          action: pulse
+          max_wait_ms: 50
+- duration: 170ms
+  coils:
+      c_xylophone_mid: 
+          action: pulse
+          max_wait_ms: 50

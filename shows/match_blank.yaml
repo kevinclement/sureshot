@@ -1,0 +1,13 @@
+#show_version=5
+- time: 0
+  lights:
+    l_match_00: off
+    l_match_10: off
+    l_match_20: off
+    l_match_30: off
+    l_match_40: off
+    l_match_50: off
+    l_match_60: off
+    l_match_70: off
+    l_match_80: off
+    l_match_90: off
