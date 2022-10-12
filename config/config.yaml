@@ -27,8 +27,11 @@ modes:
   - switch_light_control
 
 show_player:
-  game_started: general_illumination, gameover_off
-  game_ended: gameover_blink
+  game_started: 
+    general_illumination: play
+    gameover_blink: stop
+  game_ended: 
+    gameover_blink: play
 
 game:
   balls_per_game: 5
