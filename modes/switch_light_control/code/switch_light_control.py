@@ -23,4 +23,6 @@ class Trigger_Pi(Mode):
             self.write_file("/sys/class/gpio/unexport", "17")
         else: 
             self.log.debug("NO gpio found, ignorning LED Control")
+        
+        self.stop()
     
