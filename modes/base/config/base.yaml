@@ -8,6 +8,7 @@ mode:
 # TODO: Shot group for left saucer
 # TODO: Shot group for right saucer
 # TODO: coil when special hit and lit
+# TODO: special up top?  how does that work?  just top row?
 
 variable_player:
   # NOTE: Most of these shots can be grouped, but to me just
@@ -27,10 +28,11 @@ variable_player:
   ball_10_hit:    { score: 500 }
   ball_11_hit:    { score: 500 }
   
-  # Targets
-  ball_13_7_hit:  { score: 500 }
-  ball_12_15_hit: { score: 500 }
-  ball_14_8_hit:  { score: 500 }
+  # Standup Targets 
+  #   NOTE: using switch direct so we can breakout ball tracking below
+  pfs_standup_13_7_active:  { score: 500 }
+  pfs_standup_12_15_active: { score: 500 }
+  pfs_standup_14_8_active:  { score: 500 }
 
   # Slings
   pfs_sling_top_left_active:  { score: 10 }
@@ -67,30 +69,42 @@ shots:
   ball_11: { profile: sp_ball, switch: pfs_11_rollover, show_tokens: { light: pfl_11 } }
   
   # Targets
-  ball_13_7:  { profile: sp_ball, switch: pfs_standup_13_7,  show_tokens: { light: 'pfl_13, pfl_7'  } }
-  ball_12_15: { profile: sp_ball, switch: pfs_standup_12_15, show_tokens: { light: 'pfl_12, pfl_15' } }
-  ball_14_8:  { profile: sp_ball, switch: pfs_standup_14_8,  show_tokens: { light: 'pfl_14, pfl_8'  } }
+  ball_7:  { profile: sp_ball, switch: pfs_standup_13_7,  show_tokens: { light: 'pfl_7'  } }
+  ball_8:  { profile: sp_ball, switch: pfs_standup_14_8,  show_tokens: { light: 'pfl_8'  } }
+  ball_12: { profile: sp_ball, switch: pfs_standup_12_15, show_tokens: { light: 'pfl_12' } }
+  ball_13: { profile: sp_ball, switch: pfs_standup_13_7,  show_tokens: { light: 'pfl_13' } }
+  ball_14: { profile: sp_ball, switch: pfs_standup_14_8,  show_tokens: { light: 'pfl_14' } }
+  ball_15: { profile: sp_ball, switch: pfs_standup_12_15, show_tokens: { light: 'pfl_15' } }  
 
-# Top and Bottom triangle groupings that give multiplier bonus on pops
+# Triangle groupings that give bonuses
 shot_groups: 
-  top_row: { shots: 'ball_1, ball_2, ball_3, ball_4, ball_5' } 
-  bot_row: { shots: 'ball_6, ball_13_7, ball_14_8, ball_9'   }
+  top_row:   { shots: 'ball_1, ball_2, ball_3, ball_4, ball_5'    } 
+  bot_row:   { shots: 'ball_6, ball_7, ball_8, ball_9'            }
+  left_col:  { shots: 'ball_4, ball_6, ball_10, ball_13, ball_15' }
+  right_col: { shots: 'ball_5, ball_9, ball_11, ball_14, ball_15' }
 
 light_player:
   # Center Triangle Lights
-  ball_1_sp_ball_hit:     { pfl_tri_1:  on }
-  ball_2_sp_ball_hit:     { pfl_tri_2:  on }
-  ball_3_sp_ball_hit:     { pfl_tri_3:  on }
-  ball_4_sp_ball_hit:     { pfl_tri_4:  on }
-  ball_5_sp_ball_hit:     { pfl_tri_5:  on }
-  ball_6_sp_ball_hit:     { pfl_tri_6:  on }
-  ball_9_sp_ball_hit:     { pfl_tri_9:  on }
-  ball_10_sp_ball_hit:    { pfl_tri_10: on }
-  ball_11_sp_ball_hit:    { pfl_tri_11: on }
-  ball_13_7_sp_ball_hit:  { pfl_tri_13: on, pfl_tri_7:  on }
-  ball_12_15_sp_ball_hit: { pfl_tri_12: on, pfl_tri_15: on }
-  ball_14_8_sp_ball_hit:  { pfl_tri_14: on, pfl_tri_8:  on }
+  ball_1_sp_ball_hit:   { pfl_tri_1:  on }
+  ball_2_sp_ball_hit:   { pfl_tri_2:  on }
+  ball_3_sp_ball_hit:   { pfl_tri_3:  on }
+  ball_4_sp_ball_hit:   { pfl_tri_4:  on }
+  ball_5_sp_ball_hit:   { pfl_tri_5:  on }
+  ball_6_sp_ball_hit:   { pfl_tri_6:  on }
+  ball_7_sp_ball_hit:   { pfl_tri_7:  on }
+  ball_8_sp_ball_hit:   { pfl_tri_8:  on }
+  ball_9_sp_ball_hit:   { pfl_tri_9:  on }
+  ball_10_sp_ball_hit:  { pfl_tri_10: on }
+  ball_11_sp_ball_hit:  { pfl_tri_11: on }
+  ball_12_sp_ball_hit:  { pfl_tri_12: on }
+  ball_13_sp_ball_hit:  { pfl_tri_13: on }
+  ball_14_sp_ball_hit:  { pfl_tri_14: on }
+  ball_15_sp_ball_hit:  { pfl_tri_15: on }
 
   # Pop Bumper Bonuses
-  top_row_complete:       { pfl_popbumper_left: on, pfl_popbumper_right: on }
-  bot_row_complete:       { pfl_popbumper_middle: on } 
+  top_row_complete:     { pfl_popbumper_left: on, pfl_popbumper_right: on }
+  bot_row_complete:     { pfl_popbumper_middle: on } 
+
+  # Saucer Specials 
+  left_col_complete:    { pfl_special_left: on  }
+  right_col_complete:   { pfl_special_right: on } 
