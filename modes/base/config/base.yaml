@@ -5,6 +5,10 @@ mode:
   priority: 100
 
 variable_player:
+  # Balls (covers top and body rollovers)
+  ball_4_hit:
+    score: 500
+
   # Slings
   pfs_sling_top_left_active:
     score: 10
@@ -24,9 +28,7 @@ variable_player:
   pfs_popbumper_right_active:
     score: 100
 
-  # Rollovers
-  pfs_top_lane_rollover_4_active:
-    score: 500
+  # Rollovers  
   pfs_top_lane_rollover_2_active:
     score: 500
   pfs_top_lane_rollover_1_active:
@@ -45,8 +47,6 @@ variable_player:
     score: 500
   pfs_inlane_2_active:
     score: 500
-  pfs_outlane_4_active:
-    score: 500
   pfs_inlane_3_active:
     score: 500
   pfs_outlane_5_active:
@@ -62,3 +62,25 @@ variable_player:
 
   # Saucers
   # TODO:
+
+
+# TODO: Shot group for left saucer
+# TODO: Shot group for right saucer
+
+# TODO: coil when special hit and lit
+
+# switch default state so balls start on, and turn off
+shot_profiles:
+  sp_ball:
+    states:
+      - name: unlit
+        show: "on"
+      - name: lit
+        show: "off"
+
+shots:
+  ball_4:
+    profile: sp_ball
+    switch: pfs_top_lane_rollover_4, pfs_outlane_4
+    show_tokens:
+      light: pfl_top_lane_4, pfl_4
