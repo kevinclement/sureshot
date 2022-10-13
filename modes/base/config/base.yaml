@@ -3,3 +3,62 @@
 mode:
   start_events: ball_started
   priority: 100
+
+variable_player:
+  # Slings
+  pfs_sling_top_left_active:
+    score: 10
+  pfs_sling_top_right_active:
+    score: 10
+  pfs_sling_left_active:
+    score: 10
+  pfs_sling_right_active:
+    score: 10
+
+  # Pop Bumpers
+  # TODO: multiplier here
+  pfs_popbumper_left_active:
+    score: 100
+  pfs_popbumper_middle_active:
+    score: 100
+  pfs_popbumper_right_active:
+    score: 100
+
+  # Rollovers
+  pfs_top_lane_rollover_4_active:
+    score: 500
+  pfs_top_lane_rollover_2_active:
+    score: 500
+  pfs_top_lane_rollover_1_active:
+    score: 500
+  pfs_top_lane_rollover_3_active:
+    score: 500
+  pfs_top_lane_rollover_5_active:
+    score: 500
+  pfs_10_rollover_active:
+    score: 500
+  pfs_11_rollover_active:
+    score: 500
+  pfs_6_rollover_active:
+    score: 500
+  pfs_9_rollover_active:
+    score: 500
+  pfs_inlane_2_active:
+    score: 500
+  pfs_outlane_4_active:
+    score: 500
+  pfs_inlane_3_active:
+    score: 500
+  pfs_outlane_5_active:
+    score: 500
+
+  # Ball Targets
+  pfs_standup_13_7_active:
+    score: 500
+  pfs_standup_12_15_active:
+    score: 500
+  pfs_standup_14_8_active:
+    score: 500
+
+  # Saucers
+  # TODO:

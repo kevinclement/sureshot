@@ -77,5 +77,4 @@ score_reel_groups:
   srg_score:
     reels: sr_10000, sr_1000, sr_100, sr_10, None
     tags: player1, player2, player3, player4
-    
     chimes: cac_chime_high, cac_chime_low, cac_chime_mid, cac_chime_high, None
