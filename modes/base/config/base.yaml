@@ -4,6 +4,11 @@ mode:
   start_events: ball_started
   priority: 100
 
+# Saucers
+# TODO: Shot group for left saucer
+# TODO: Shot group for right saucer
+# TODO: coil when special hit and lit
+
 variable_player:
   # NOTE: Most of these shots can be grouped, but to me just
   # leads to more inderection later when trying to read this.
@@ -27,7 +32,6 @@ variable_player:
   ball_12_15_hit: { score: 500 }
   ball_14_8_hit:  { score: 500 }
 
-
   # Slings
   pfs_sling_top_left_active:  { score: 10 }
   pfs_sling_top_right_active: { score: 10 }
@@ -35,17 +39,13 @@ variable_player:
   pfs_sling_right_active:     { score: 10 }
 
   # Pop Bumpers
-  # TODO: multiplier here
-  pfs_popbumper_left_active:   { score: 100 }
-  pfs_popbumper_middle_active: { score: 100 }
-  pfs_popbumper_right_active:  { score: 100 }
+  pfs_popbumper_left_active:   { score: 100 * current_player.top_pop_multiplier }
+  pfs_popbumper_middle_active: { score: 100 * current_player.mid_pop_multiplier }
+  pfs_popbumper_right_active:  { score: 100 * current_player.top_pop_multiplier }
 
-  # Saucers
-  # TODO:
-
-# TODO: Shot group for left saucer
-# TODO: Shot group for right saucer
-# TODO: coil when special hit and lit
+  # when top and bottom rows are complete, multipliers for pops increases
+  top_row_complete: { top_pop_multiplier: { int: 10, action: set } }
+  bot_row_complete: { mid_pop_multiplier: { int: 10, action: set } }
 
 # inverted on/off state for balls
 #   state 1: on
@@ -71,7 +71,13 @@ shots:
   ball_12_15: { profile: sp_ball, switch: pfs_standup_12_15, show_tokens: { light: 'pfl_12, pfl_15' } }
   ball_14_8:  { profile: sp_ball, switch: pfs_standup_14_8,  show_tokens: { light: 'pfl_14, pfl_8'  } }
 
+# Top and Bottom triangle groupings that give multiplier bonus on pops
+shot_groups: 
+  top_row: { shots: 'ball_1, ball_2, ball_3, ball_4, ball_5' } 
+  bot_row: { shots: 'ball_6, ball_13_7, ball_14_8, ball_9'   }
+
 light_player:
+  # Center Triangle Lights
   ball_1_sp_ball_hit:     { pfl_tri_1:  on }
   ball_2_sp_ball_hit:     { pfl_tri_2:  on }
   ball_3_sp_ball_hit:     { pfl_tri_3:  on }
@@ -84,3 +90,7 @@ light_player:
   ball_13_7_sp_ball_hit:  { pfl_tri_13: on, pfl_tri_7:  on }
   ball_12_15_sp_ball_hit: { pfl_tri_12: on, pfl_tri_15: on }
   ball_14_8_sp_ball_hit:  { pfl_tri_14: on, pfl_tri_8:  on }
+
+  # Pop Bumper Bonuses
+  top_row_complete:       { pfl_popbumper_left: on, pfl_popbumper_right: on }
+  bot_row_complete:       { pfl_popbumper_middle: on } 

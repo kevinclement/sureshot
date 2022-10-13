@@ -10,6 +10,13 @@ config:
   - platform_fast.yaml
   - switches.yaml
 
+# -- Player Variables ---------
+player_vars:
+  top_pop_multiplier:
+    initial_value: 1
+  mid_pop_multiplier:
+    initial_value: 1
+
 # -- Modes --------------------
 modes:
   - base
