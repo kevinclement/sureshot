@@ -70,6 +70,10 @@ variable_player:
 # TODO: coil when special hit and lit
 
 # switch default state so balls start on, and turn off
+
+# inverted on/off state for balls
+#   state 1: on
+#   state 2: off
 shot_profiles:
   sp_ball:
     states:
@@ -84,3 +88,7 @@ shots:
     switch: pfs_top_lane_rollover_4, pfs_outlane_4
     show_tokens:
       light: pfl_top_lane_4, pfl_4
+  tri_ball_4:
+    hit_events: ball_4_sp_ball_hit
+    show_tokens:
+      light: pfl_tri_4
