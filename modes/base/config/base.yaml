@@ -9,7 +9,7 @@ variable_player:
   # leads to more inderection later when trying to read this.
   # So I'd rather be explicit here and its easier to follow 
 
-  # Balls (covers top and body rollovers)
+  # Lane Number Rollovers
   ball_1_hit:
     score: 500
   ball_2_hit:
@@ -20,6 +20,8 @@ variable_player:
     score: 500
   ball_5_hit:
     score: 500
+  
+  # Outlanes
   ball_6_hit:
     score: 500
   ball_9_hit:
@@ -27,6 +29,14 @@ variable_player:
   ball_10_hit:
     score: 500
   ball_11_hit:
+    score: 500
+  
+  # Targets
+  ball_13_7_hit:
+    score: 500
+  ball_12_15_hit:
+    score: 500
+  ball_14_8_hit:
     score: 500
 
   # Slings
@@ -47,14 +57,6 @@ variable_player:
     score: 100
   pfs_popbumper_right_active:
     score: 100
-
-  # Ball Targets
-  pfs_standup_13_7_active:
-    score: 500
-  pfs_standup_12_15_active:
-    score: 500
-  pfs_standup_14_8_active:
-    score: 500
 
   # Saucers
   # TODO:
@@ -167,3 +169,33 @@ shots:
     hit_events: ball_11_sp_ball_hit
     show_tokens:
       light: pfl_tri_11
+  # Ball 13_7
+  ball_13_7:
+    profile: sp_ball
+    switch: pfs_standup_13_7
+    show_tokens:
+      light: pfl_13, pfl_7
+  tri_ball_13_7:
+    hit_events: ball_13_7_sp_ball_hit
+    show_tokens:
+      light: pfl_tri_13, pfl_tri_7
+  # Ball 12_15
+  ball_12_15:
+    profile: sp_ball
+    switch: pfs_standup_12_15
+    show_tokens:
+      light: pfl_12, pfl_15
+  tri_ball_12_15:
+    hit_events: ball_12_15_sp_ball_hit
+    show_tokens:
+      light: pfl_tri_12, pfl_tri_15
+  # Ball 14_8
+  ball_14_8:
+    profile: sp_ball
+    switch: pfs_standup_14_8
+    show_tokens:
+      light: pfl_14, pfl_8
+  tri_ball_14_8:
+    hit_events: ball_14_8_sp_ball_hit
+    show_tokens:
+      light: pfl_tri_14, pfl_tri_8
