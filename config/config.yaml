@@ -16,6 +16,11 @@ player_vars:
     initial_value: 1
   mid_pop_multiplier:
     initial_value: 1
+  left_col_lit:
+    initial_value: 0
+  right_col_lit:
+    initial_value: 0
+
 
 # -- Modes --------------------
 modes:
