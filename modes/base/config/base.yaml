@@ -20,6 +20,14 @@ variable_player:
     score: 500
   ball_5_hit:
     score: 500
+  ball_6_hit:
+    score: 500
+  ball_9_hit:
+    score: 500
+  ball_10_hit:
+    score: 500
+  ball_11_hit:
+    score: 500
 
   # Slings
   pfs_sling_top_left_active:
@@ -40,16 +48,6 @@ variable_player:
   pfs_popbumper_right_active:
     score: 100
 
-  # Rollovers  
-  pfs_10_rollover_active:
-    score: 500
-  pfs_11_rollover_active:
-    score: 500
-  pfs_6_rollover_active:
-    score: 500
-  pfs_9_rollover_active:
-    score: 500
-
   # Ball Targets
   pfs_standup_13_7_active:
     score: 500
@@ -66,8 +64,6 @@ variable_player:
 # TODO: Shot group for right saucer
 
 # TODO: coil when special hit and lit
-
-# switch default state so balls start on, and turn off
 
 # inverted on/off state for balls
 #   state 1: on
@@ -131,3 +127,43 @@ shots:
     hit_events: ball_5_sp_ball_hit
     show_tokens:
       light: pfl_tri_5
+  # Ball 6
+  ball_6:
+    profile: sp_ball
+    switch: pfs_6_rollover
+    show_tokens:
+      light: pfl_6
+  tri_ball_6:
+    hit_events: ball_6_sp_ball_hit
+    show_tokens:
+      light: pfl_tri_6
+  # Ball 9
+  ball_9:
+    profile: sp_ball
+    switch: pfs_9_rollover
+    show_tokens:
+      light: pfl_9
+  tri_ball_9:
+    hit_events: ball_9_sp_ball_hit
+    show_tokens:
+      light: pfl_tri_9
+  # Ball 10
+  ball_10:
+    profile: sp_ball
+    switch: pfs_10_rollover
+    show_tokens:
+      light: pfl_10
+  tri_ball_10:
+    hit_events: ball_10_sp_ball_hit
+    show_tokens:
+      light: pfl_tri_10
+  # Ball 11
+  ball_11:
+    profile: sp_ball
+    switch: pfs_11_rollover
+    show_tokens:
+      light: pfl_11
+  tri_ball_11:
+    hit_events: ball_11_sp_ball_hit
+    show_tokens:
+      light: pfl_tri_11
