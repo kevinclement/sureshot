@@ -4,16 +4,16 @@ coils:
 
   ## BACKBOX          :  FP-I/O-3208  #################
   #####################################################
-  bbc_wheel_10:
+  bbc_reel_10:
     number: 3-0
     default_pulse_ms: 6ms
-  bbc_wheel_100:
+  bbc_reel_100:
     number: 3-2
     default_pulse_ms: 6ms
-  bbc_wheel_1000:
+  bbc_reel_1000:
     number: 3-3
     default_pulse_ms: 6ms
-  bbc_wheel_10000:
+  bbc_reel_10000:
     number: 3-1
     default_pulse_ms: 6ms
   bbc_gi_lights:

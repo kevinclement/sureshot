@@ -4,13 +4,13 @@ switches:
 
   ## BACKBOX   ########################################
   #####################################################
-  bbs_wheel_zero_10:
+  bbs_reel_zero_10:
     number: 3-0
-  bbs_wheel_zero_100:
+  bbs_reel_zero_100:
     number: 3-2
-  bbs_wheel_zero_1000:
+  bbs_reel_zero_1000:
     number: 3-3
-  bbs_wheel_zero_10000:
+  bbs_reel_zero_10000:
     number: 3-1
 
   ## CABINET   ########################################
