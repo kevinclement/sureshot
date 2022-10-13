@@ -5,8 +5,20 @@ mode:
   priority: 100
 
 variable_player:
+  # NOTE: Most of these shots can be grouped, but to me just
+  # leads to more inderection later when trying to read this.
+  # So I'd rather be explicit here and its easier to follow 
+
   # Balls (covers top and body rollovers)
+  ball_1_hit:
+    score: 500
+  ball_2_hit:
+    score: 500
+  ball_3_hit:
+    score: 500
   ball_4_hit:
+    score: 500
+  ball_5_hit:
     score: 500
 
   # Slings
@@ -29,14 +41,6 @@ variable_player:
     score: 100
 
   # Rollovers  
-  pfs_top_lane_rollover_2_active:
-    score: 500
-  pfs_top_lane_rollover_1_active:
-    score: 500
-  pfs_top_lane_rollover_3_active:
-    score: 500
-  pfs_top_lane_rollover_5_active:
-    score: 500
   pfs_10_rollover_active:
     score: 500
   pfs_11_rollover_active:
@@ -44,12 +48,6 @@ variable_player:
   pfs_6_rollover_active:
     score: 500
   pfs_9_rollover_active:
-    score: 500
-  pfs_inlane_2_active:
-    score: 500
-  pfs_inlane_3_active:
-    score: 500
-  pfs_outlane_5_active:
     score: 500
 
   # Ball Targets
@@ -83,6 +81,37 @@ shot_profiles:
         show: "off"
 
 shots:
+  # Ball 1
+  ball_1:
+    profile: sp_ball
+    switch: pfs_top_lane_rollover_1
+    show_tokens:
+      light: pfl_top_lane_1
+  tri_ball_1:
+    hit_events: ball_1_sp_ball_hit
+    show_tokens:
+      light: pfl_tri_1
+  # Ball 2
+  ball_2:
+    profile: sp_ball
+    switch: pfs_top_lane_rollover_2, pfs_inlane_2
+    show_tokens:
+      light: pfl_top_lane_2, pfl_2
+  tri_ball_2:
+    hit_events: ball_2_sp_ball_hit
+    show_tokens:
+      light: pfl_tri_2
+  # Ball 3
+  ball_3:
+    profile: sp_ball
+    switch: pfs_top_lane_rollover_3, pfs_inlane_3
+    show_tokens:
+      light: pfl_top_lane_3, pfl_3
+  tri_ball_3:
+    hit_events: ball_3_sp_ball_hit
+    show_tokens:
+      light: pfl_tri_3
+  # Ball 4
   ball_4:
     profile: sp_ball
     switch: pfs_top_lane_rollover_4, pfs_outlane_4
@@ -91,4 +120,14 @@ shots:
   tri_ball_4:
     hit_events: ball_4_sp_ball_hit
     show_tokens:
-      light: pfl_tri_4
+      light: pfl_tri_4  
+  # Ball 5
+  ball_5:
+    profile: sp_ball
+    switch: pfs_top_lane_rollover_5, pfs_outlane_5
+    show_tokens:
+      light: pfl_top_lane_5, pfl_5
+  tri_ball_5:
+    hit_events: ball_5_sp_ball_hit
+    show_tokens:
+      light: pfl_tri_5
