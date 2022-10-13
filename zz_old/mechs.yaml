@@ -1,0 +1,81 @@
+#config_version=5
+
+flippers:
+  left_flipper:
+    main_coil: c_flipper_left_main
+    hold_coil: c_flipper_left_hold
+    activation_switch: s_left_flipper
+    eos_switch: s_left_flipper_eos
+  right_flipper:
+    main_coil: c_flipper_right_main
+    hold_coil: c_flipper_right_hold
+    activation_switch: s_right_flipper
+    eos_switch: s_right_flipper_eos
+
+ball_devices:
+  bd_drain:
+    ball_switches: s_drain
+    eject_coil: c_drain_eject
+    eject_targets: bd_plunger_lane
+    tags: drain, home, trough
+    eject_timeouts: 3s
+  bd_plunger_lane:
+    ball_switches: s_plunger
+    mechanical_eject: true
+    eject_timeouts: 5s
+  bd_saucer_left:
+    ball_switches: s_saucer_left
+    eject_coil: c_saucer_left
+    eject_timeouts: 2s
+    entrance_count_delay: 1s
+  bd_saucer_right:
+    ball_switches: s_saucer_right
+    eject_coil: c_saucer_right
+    eject_timeouts: 2s
+    entrance_count_delay: 1s
+
+autofire_coils:
+  ac_slightshot_left:
+    coil: c_sling_left
+    switch: s_sling_left
+  ac_slightshot_right:
+    coil: c_sling_right
+    switch: s_sling_right
+  ac_popbumper_left:
+    coil: c_popbumper_left
+    switch: s_popbumper_left
+  ac_popbumper_middle:
+    coil: c_popbumper_middle
+    switch: s_popbumper_middle
+  ac_popbumper_right:
+    coil: c_popbumper_right
+    switch: s_popbumper_right
+
+score_reels:
+  sr_10:
+    coil_inc: c_score_inc_10
+    switch_0: s_score_zero_10
+    repeat_pulse_time: 150ms
+    hw_confirm_time: 10ms
+  sr_100:
+    coil_inc: c_score_inc_100
+    switch_0: s_score_zero_100
+    repeat_pulse_time: 150ms
+    hw_confirm_time: 10ms
+  sr_1000:
+    coil_inc: c_score_inc_1000
+    switch_0: s_score_zero_1000
+    repeat_pulse_time: 150ms
+    hw_confirm_time: 10ms
+  sr_10000:
+    coil_inc: c_score_inc_10000
+    switch_0: s_score_zero_10000
+    repeat_pulse_time: 150ms
+    hw_confirm_time: 10ms
+
+score_reel_groups:
+  srg_score:
+    reels: sr_10000, sr_1000, sr_100, sr_10, None
+    tags: player1, player2, player3, player4
+    
+    chimes: c_xylophone_high, c_xylophone_low, c_xylophone_mid, c_xylophone_high, None

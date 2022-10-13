@@ -1,0 +1,281 @@
+#config_version=5
+
+lights:
+  ## BACKBOX   ##########################################
+  #######################################################
+
+  # -- Ball in Play -----------
+  bbl_ball_in_play_1:
+    number: 2-11
+    type: grb
+  bbl_ball_in_play_2:
+    number: 2-12
+    type: grb
+  bbl_ball_in_play_3:
+    number: 2-13
+    type: grb
+  bbl_ball_in_play_4:
+    number: 2-14
+    type: grb
+  bbl_ball_in_play_5:
+    number: 2-15
+    type: grb
+
+  # -- Game Over --------------
+  bbl_gameover:
+    number: 2-10
+    type: grb
+
+  # -- Match ------------------
+  bbl_match_00:
+    number: 2-9
+    type: grb
+  bbl_match_10:
+    number: 2-8
+    type: grb
+  bbl_match_20:
+    number: 2-7
+    type: grb
+  bbl_match_30:
+    number: 2-6
+    type: grb
+  bbl_match_40:
+    number: 2-5
+    type: grb
+  bbl_match_50:
+    number: 2-4
+    type: grb
+  bbl_match_60:
+    number: 2-3
+    type: grb
+  bbl_match_70:
+    number: 2-2
+    type: grb
+  bbl_match_80:
+    number: 2-1
+    type: grb
+  bbl_match_90:
+    number: 2-0
+    type: grb
+
+  # -- GI ---------------------
+  bbl_backbox_gi:
+    number: bbc_gi_lights
+    platform: drivers
+
+  ## PLAYFIELD   ########################################
+  #######################################################
+
+  # -- Top Lane ---------------
+  pfl_top_lane_4:
+    number: 1-6
+    type: grb
+  pfl_top_lane_2:
+    number: 1-5
+    type: grb
+  pfl_top_lane_1:
+    number: 1-3
+    type: grb
+  pfl_top_lane_special:
+    number: 1-4
+    default_on_color: red
+    type: grb
+  pfl_top_lane_3:
+    number: 1-2
+    type: grb
+  pfl_top_lane_5:
+    number: 1-0
+    type: grb
+
+  # -- Saucers ----------------
+  pfl_special_left:
+    number: 1-7
+    default_on_color: red
+    type: grb
+  pfl_special_right:
+    number: 1-45
+    default_on_color: red
+    type: grb
+
+  # -- Pop Bumpers ------------
+  pfl_popbumper_left:
+    number: 1-1
+    type: grb
+  pfl_popbumper_middle:
+    number: 1-26
+    type: grb
+  pfl_popbumper_right:
+    number: 1-8
+    type: grb
+
+  # -- Numbered Inserts -------
+  pfl_10:
+    number: 1-9
+    type: grb
+  pfl_11:
+    number: 1-44
+    type: grb
+  pfl_12:
+    number: 1-27
+    type: grb
+  pfl_15:
+    number: 1-28
+    type: grb
+  pfl_6:
+    number: 1-10
+    type: grb
+  pfl_9:
+    number: 1-43
+    type: grb
+  pfl_13:
+    number: 1-11
+    type: grb
+  pfl_7:
+    number: 1-14
+    type: grb
+  pfl_8:
+    number: 1-39
+    type: grb
+  pfl_14:
+    number: 1-42
+    type: grb
+  pfl_4:
+    number: 1-12
+    type: grb
+  pfl_2:
+    number: 1-13
+    type: grb
+  pfl_3:
+    number: 1-40
+    type: grb
+  pfl_5:
+    number: 1-41
+    type: grb
+
+  # -- Triangle ---------------
+  pfl_tri_4:
+    number: 1-25
+    type: grb
+  pfl_tri_2:
+    number: 1-29
+    type: grb
+  pfl_tri_1:
+    number: 1-30
+    type: grb
+  pfl_tri_3:
+    number: 1-31
+    type: grb
+  pfl_tri_5:
+    number: 1-32
+    type: grb
+  pfl_tri_6:
+    number: 1-24
+    type: grb
+  pfl_tri_7:
+    number: 1-35
+    type: grb
+  pfl_tri_8:
+    number: 1-34
+    type: grb
+  pfl_tri_9:
+    number: 1-33
+    type: grb
+  pfl_tri_10:
+    number: 1-23
+    type: grb
+  pfl_tri_12:
+    number: 1-36
+    type: grb
+  pfl_tri_11:
+    number: 1-38
+    type: grb
+  pfl_tri_13:
+    number: 1-22
+    type: grb
+  pfl_tri_14:
+    number: 1-37
+    type: grb
+  pfl_tri_15:
+    number: 1-21
+    type: grb
+
+  # -- Trough -----------------
+  pfl_trough_1:
+    number: 1-15
+    type: grb
+  pfl_trough_2:
+    number: 1-16
+    type: grb
+  pfl_trough_3:
+    number: 1-17
+    type: grb
+  pfl_trough_4:
+    number: 1-18
+    type: grb
+  pfl_trough_5:
+    number: 1-19
+    type: grb
+  pfl_trough_6:
+    number: 1-20
+    type: grb
+
+  # -- GI ---------------------
+  pfl_gi_top_lane_1:
+    number: 0-5
+    type: rgb
+  pfl_gi_top_lane_2:
+    number: 0-4
+    type: rgb
+  pfl_gi_top_lane_3:
+    number: 0-3
+    type: rgb
+  pfl_gi_top_lane_4:
+    number: 0-2
+    type: rgb
+  pfl_gi_top_lane_5:
+    number: 0-1
+    type: rgb
+  pfl_gi_top_lane_6:
+    number: 0-0
+    type: rgb
+  pfl_gi_sling_top_left:
+    number: 0-6
+    type: rgb
+  pfl_gi_sling_top_right:
+    number: 0-13
+    type: rgb
+  pfl_gi_standup_left:
+    number: 0-7
+    type: rgb
+  pfl_gi_standup_right:
+    number: 0-12
+    type: rgb
+  pfl_gi_sling_left_1:
+    number: 0-8
+    type: rgb
+  pfl_gi_sling_left_2:
+    number: 0-9
+    type: rgb
+  pfl_gi_sling_right_1:
+    number: 0-11
+    type: rgb
+  pfl_gi_sling_right_2:
+    number: 0-10
+    type: rgb
+
+light_settings:
+  default_fade_ms: 40
+  default_color_correction_profile: correction_profile_less_blue
+  color_correction_profiles:
+    correction_profile_warm_white:
+      whitepoint: [0.93, 0.92, 0.84]
+    correction_profile_less_red:
+      whitepoint: [0.9, 1.0, 1.0]
+      gamma: 2.5
+      linear_slope: 1.0
+      linear_cutoff: 0.0
+    correction_profile_less_blue:
+      whitepoint: [0.93, 0.92, 0.84]
+      gamma: 2.5
+      linear_slope: 0.8
+      linear_cutoff: 0.1

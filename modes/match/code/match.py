@@ -15,7 +15,7 @@ class Match(AsyncMode):
         random_match_numbers = self.match_numbers
         shuffle(random_match_numbers)
         self.match = random_match_numbers[0]
-        self.match_light = "l_match_" + self.match
+        self.match_light = "bbl_match_" + self.match
         self.log.info(f'MATCH found was {self.match} and light {self.match_light}')
 
         # pull out the players scores and their match numbers
@@ -31,7 +31,6 @@ class Match(AsyncMode):
                 self.log.info(f'Player {p_num} MATCHED!!!!')
                 self.player_matches[i] = True
                 aMatchFound = True
-
 
         # just turn on the match lamp
         self.machine.lights[self.match_light].on(key="match")

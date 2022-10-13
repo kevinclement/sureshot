@@ -1,36 +1,26 @@
 #config_version=5
-
-config:
-  - platform_fast.yaml
-  - hardware_backbox.yaml
-  - hardware_cabinet.yaml
-  - hardware_playfield.yaml
-  - mechs.yaml
-  - virtual.yaml
-
-mpf: 
+mpf:
   report_crashes: never
   default_light_hw_update_hz: 30
 
+config:
+  - coils.yaml
+  - lights.yaml
+  - mechs.yaml
+  - platform_fast.yaml
+  - switches.yaml
+
+# -- Modes --------------------
 modes:
-  - all_balls_completed
   - base
-  - ball_awards
-  - ball_indicator
   - bonus
   - match
-  - top_row_completed
-  - saucer
-  - second_row_completed
-  - all_balls_completed
-  - switch_light_control
 
 show_player:
-  game_started: 
+  game_started:
     general_illumination: play
     game_over_blink: stop
     match_blank: play
-    
   game_ending:
     match_blank: stop
     game_over_tone:
@@ -48,9 +38,11 @@ game:
 playfields:
   playfield:
     tags: default
-    default_source_device: bd_plunger_lane
+    default_source_device: bd_shooter_lane
     enable_ball_search: true
     ball_search_disable_events: balldevice_playfield_ball_enter
     console_log: basic
     file_log: basic
 
+# -- Virtual ------------------
+virtual_platform_start_active_switches: s_drain

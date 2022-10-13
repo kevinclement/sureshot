@@ -2,4 +2,4 @@
 
 - duration: 500ms
   coils:
-      c_knocker: pulse
+      cac_knocker: pulse

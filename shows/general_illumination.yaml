@@ -1,0 +1,34 @@
+#show_version=5
+  - time: 0
+    duration: -1
+    lights:
+      pfl_gi_top_lane_1:
+        color: white
+      pfl_gi_top_lane_2:
+        color: white
+      pfl_gi_top_lane_3:
+        color: white
+      pfl_gi_top_lane_4:
+        color: white
+      pfl_gi_top_lane_5:
+        color: white
+      pfl_gi_top_lane_6:
+        color: white
+      pfl_gi_sling_top_left:
+        color: white
+      pfl_gi_sling_top_right:
+        color: white
+      pfl_gi_standup_left:
+        color: white
+      pfl_gi_standup_right:
+        color: white
+      pfl_gi_sling_left_1:
+        color: white
+      pfl_gi_sling_left_2:
+        color: white
+      pfl_gi_sling_right_1:
+        color: white
+      pfl_gi_sling_right_2:
+        color: white
+
+      bbl_backbox_gi: ff # isn't RGB, just on (ff) and off (00)

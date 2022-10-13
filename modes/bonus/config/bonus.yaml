@@ -1,10 +1,8 @@
 #config_version=5
 
-##! mode: bonus
-mode_settings:
-  display_delay_ms: 1s
-  hurry_up_delay_ms: 0
-  bonus_entries:
-    - event: bonus_lit_balls
-      score: 1000
-      player_score_entry: lit_balls
+mode:
+  code: bonus.Count
+  start_events: ball_ending
+  stop_events: bonus_complete
+  use_wait_queue: true
+  priority: 105

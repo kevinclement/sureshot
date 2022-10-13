@@ -1,0 +1,129 @@
+#config_version=5
+
+switches:
+
+  ## BACKBOX   ########################################
+  #####################################################
+  bbs_wheel_zero_10:
+    number: 3-0
+  bbs_wheel_zero_100:
+    number: 3-2
+  bbs_wheel_zero_1000:
+    number: 3-3
+  bbs_wheel_zero_10000:
+    number: 3-1
+
+  ## CABINET   ########################################
+  #####################################################
+  cas_left_flipper_btn:
+    number: 0-1
+    tags: left_flipper
+  cas_right_flipper_btn:
+    number: 0-0
+    tags: right_flipper
+  cas_start_btn:
+    number: 0-2
+    tags: start
+
+  ## PLAYFIELD   ######################################
+  #####################################################
+
+  # -- Top Lane Rollovers -----
+  pfs_top_lane_rollover_4:
+    number: 2-26
+    tags: playfield_active
+  pfs_top_lane_rollover_2:
+    number: 2-27
+    tags: playfield_active
+  pfs_top_lane_rollover_1:
+    number: 2-24
+    tags: playfield_active
+  pfs_top_lane_rollover_3:
+    number: 2-25
+    tags: playfield_active
+  pfs_top_lane_rollover_5:
+    number: 2-8
+    tags: playfield_active
+
+  # -- Saucers ----------------
+  pfs_saucer_left:
+    number: 2-6
+  pfs_saucer_right:
+    number: 2-10
+
+  # -- Pop Bumpers ------------
+  pfs_popbumper_left:
+    number: 2-3
+  pfs_popbumper_middle:
+    number: 2-1
+  pfs_popbumper_right:
+    number: 2-9
+
+  # -- Lane Number Rollovers --
+  pfs_10_rollover:
+    number: 2-7
+    tags: playfield_active
+  pfs_11_rollover:
+    number: 2-12
+    tags: playfield_active
+  pfs_6_rollover:
+    number: 2-2
+    tags: playfield_active
+  pfs_9_rollover:
+    number: 2-14
+    tags: playfield_active
+
+  # -- Uppler sling targets ---
+  pfs_sling_top_left:
+    number: 2-5
+    tags: playfield_active
+  pfs_sling_top_right:
+    number: 2-11
+    tags: playfield_active
+
+  # -- Ball Targets -----------
+  pfs_standup_13_7:
+    number: 2-4
+    tags: playfield_active
+  pfs_standup_12_15:
+    number: 2-28
+    tags: playfield_active
+  pfs_standup_14_8:
+    number: 2-13
+    tags: playfield_active
+
+  # -- Slings -----------------
+  pfs_sling_left:
+    number: 2-0
+    tags: playfield_active
+  pfs_sling_right:
+    number: 2-15
+    tags: playfield_active
+
+  # -- Inlanes/Outlanes -------
+  pfs_inlane_2:
+    number: 1-2
+    tags: playfield_active
+  pfs_outlane_4:
+    number: 1-3
+    tags: playfield_active
+  pfs_inlane_3:
+    number: 1-7
+    tags: playfield_active
+  pfs_outlane_5:
+    number: 1-6
+    tags: playfield_active
+
+  # -- Flippers ---------------
+  pfs_left_flipper_eos:
+    number: 1-0
+    tags: left_flipper
+  pfs_right_flipper_eos:
+    number: 1-1
+    tags: right_flipper
+
+  # -- Drain/Plunge -----------
+  pfs_drain:
+    number: 1-4
+  pfs_plunger:
+    number: 1-5
