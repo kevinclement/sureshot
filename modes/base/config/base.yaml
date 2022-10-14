@@ -127,6 +127,7 @@ show_player:
   all_balls_complete:
     special:
       manual_advance: true
+      start_step: -1
   sw_ball_active:
     special:
       action: advance

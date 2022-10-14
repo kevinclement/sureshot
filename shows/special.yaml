@@ -1,15 +1,15 @@
 #show_version=5
-- time: 0
+- duration: -1
   lights:
     pfl_top_lane_special: red
     pfl_special_left: off
     pfl_special_right: off
-- time: +1
+- duration: -1
   lights:
     pfl_top_lane_special: off
     pfl_special_left: red
     pfl_special_right: off
-- time: +1
+- duration: -1
   lights:
     pfl_top_lane_special: off
     pfl_special_left: off

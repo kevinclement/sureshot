@@ -1,2 +1,2 @@
 #/bin/bash
-mpf -tbv
+mpf -tbv -X
