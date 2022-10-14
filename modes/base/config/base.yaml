@@ -123,6 +123,10 @@ light_player:
   top_row_complete:     { pfl_popbumper_left: on, pfl_popbumper_right: on }
   bot_row_complete:     { pfl_popbumper_middle: on } 
 
-  # Saucer Specials 
-  left_col_complete:    { pfl_special_left: on  }
-  right_col_complete:   { pfl_special_right: on } 
+show_player:
+  all_balls_complete:
+    special:
+      manual_advance: true
+  sw_ball_active:
+    special:
+      action: advance

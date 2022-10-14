@@ -31,19 +31,19 @@ switches:
   # -- Top Lane Rollovers -----
   pfs_top_lane_rollover_4:
     number: 2-26
-    tags: playfield_active
+    tags: playfield_active, ball
   pfs_top_lane_rollover_2:
     number: 2-27
-    tags: playfield_active
+    tags: playfield_active, ball
   pfs_top_lane_rollover_1:
     number: 2-24
-    tags: playfield_active
+    tags: playfield_active, ball
   pfs_top_lane_rollover_3:
     number: 2-25
-    tags: playfield_active
+    tags: playfield_active, ball
   pfs_top_lane_rollover_5:
     number: 2-8
-    tags: playfield_active
+    tags: playfield_active, ball
 
   # -- Saucers ----------------
   pfs_saucer_left:
@@ -64,16 +64,16 @@ switches:
   # -- Lane Number Rollovers --
   pfs_10_rollover:
     number: 2-7
-    tags: playfield_active
+    tags: playfield_active, ball
   pfs_11_rollover:
     number: 2-12
-    tags: playfield_active
+    tags: playfield_active, ball
   pfs_6_rollover:
     number: 2-2
-    tags: playfield_active
+    tags: playfield_active, ball
   pfs_9_rollover:
     number: 2-14
-    tags: playfield_active
+    tags: playfield_active, ball
 
   # -- Upper sling targets ---
   pfs_sling_top_left:
@@ -86,13 +86,13 @@ switches:
   # -- Ball Targets -----------
   pfs_standup_13_7:
     number: 2-4
-    tags: playfield_active
+    tags: playfield_active, ball
   pfs_standup_12_15:
     number: 2-28
-    tags: playfield_active
+    tags: playfield_active, ball
   pfs_standup_14_8:
     number: 2-13
-    tags: playfield_active
+    tags: playfield_active, ball
 
   # -- Slings -----------------
   pfs_sling_left:
@@ -103,16 +103,16 @@ switches:
   # -- Inlanes/Outlanes -------
   pfs_inlane_2:
     number: 1-2
-    tags: playfield_active
+    tags: playfield_active, ball
   pfs_outlane_4:
     number: 1-3
-    tags: playfield_active
+    tags: playfield_active, ball
   pfs_inlane_3:
     number: 1-7
-    tags: playfield_active
+    tags: playfield_active, ball
   pfs_outlane_5:
     number: 1-6
-    tags: playfield_active
+    tags: playfield_active, ball
 
   # -- Flippers ---------------
   pfs_left_flipper_eos:
