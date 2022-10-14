@@ -10,9 +10,10 @@ mode:
 # TODO: special up top?  how does that work?  just top row?
 
 variable_player:
-  # NOTE: Most of these shots can be grouped, but to me just
-  # leads to more inderection later when trying to read this.
-  # So I'd rather be explicit here and its easier to follow 
+  # NOTE: Most of these shots can be grouped or using tags, 
+  # but to me just leads to more inderection later when 
+  # trying to read this. So I'd rather be explicit here
+  # and have that be easier to follow.  my opinion might change.
 
   # Lane Rollovers
   ball_1_hit:     { score: 500 }
@@ -46,7 +47,7 @@ variable_player:
 
   # Saucers
   pfs_saucer_left_active:  { score: (100 * (5 - current_player.left_col_lit)) + (1000 * current_player.left_col_lit) }
-  pfs_saucer_right_active: { score: (100 * (5 - current_player.rignt_col_lit)) + (1000 * current_player.right_col_lit) }
+  pfs_saucer_right_active: { score: (100 * (5 - current_player.right_col_lit)) + (1000 * current_player.right_col_lit) }
 
   # when top and bottom rows are complete, multipliers for pops increases
   top_row_complete: { top_pop_multiplier: { int: 10, action: set } }

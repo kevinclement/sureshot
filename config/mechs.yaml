@@ -27,12 +27,12 @@ ball_devices:
     ball_switches: pfs_saucer_left
     eject_coil: pfc_saucer_left
     eject_timeouts: 2s
-    entrance_count_delay: 500ms
+    entrance_count_delay: 1s
   bd_saucer_right:
     ball_switches: pfs_saucer_right
     eject_coil: pfc_saucer_right
     eject_timeouts: 2s
-    entrance_count_delay: 500ms
+    entrance_count_delay: 1s
 
 autofire_coils:
   ac_slightshot_left:

@@ -58,8 +58,6 @@ playfields:
 # TODO: ADD BACK
 #    enable_ball_search: true
 #    ball_search_disable_events: balldevice_playfield_ball_enter
-    console_log: basic
-    file_log: basic
 
 # -- Virtual ------------------
-virtual_platform_start_active_switches: s_drain
+virtual_platform_start_active_switches: pfs_drain
