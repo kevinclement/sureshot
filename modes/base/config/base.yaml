@@ -72,7 +72,7 @@ shots:
   
   # Outlanes
   ball_6:  { profile: sp_ball, switch: pfs_6_rollover,  show_tokens: { l_on: pfl_6,  l_off: 'pfl_tri_6'  } }
-  ball_9:  { profile: sp_ball, switch: pfs_9_rollover,  show_tokens: { l_on: pfl_9,  l_off: 'pfl_tri_7'  } }
+  ball_9:  { profile: sp_ball, switch: pfs_9_rollover,  show_tokens: { l_on: pfl_9,  l_off: 'pfl_tri_9'  } }
   ball_10: { profile: sp_ball, switch: pfs_10_rollover, show_tokens: { l_on: pfl_10, l_off: 'pfl_tri_10' } }
   ball_11: { profile: sp_ball, switch: pfs_11_rollover, show_tokens: { l_on: pfl_11, l_off: 'pfl_tri_11' } }
   
