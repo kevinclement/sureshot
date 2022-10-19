@@ -99,8 +99,8 @@ shots:
   special_r:   { profile: special_profile, switch: pfs_saucer_right,        show_tokens: { light: pfl_special_right }, advance_events: all_balls_complete }
 
   # Pop Bumper Lights (triggered by row completes)
-  pop_top: { advance_events: top_row_complete, show_tokens: { light: pfl_popbumper_left, pfl_popbumper_right } }
-  pop_bot: { advance_events: top_row_complete, show_tokens: { light: pfl_popbumper_middle } }
+  pop_top: { advance_events: top_row_complete, show_tokens: { light: 'pfl_popbumper_left, pfl_popbumper_right' } }
+  pop_bot: { advance_events: bot_row_complete, show_tokens: { light: 'pfl_popbumper_middle' } }
 
 # Triangle groupings that give bonuses
 shot_groups: 
