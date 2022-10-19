@@ -55,22 +55,22 @@ score_reels:
   sr_10:
     coil_inc: bbc_reel_10
     switch_0: bbs_reel_zero_10
-    repeat_pulse_time: 120ms
+    repeat_pulse_time: 150ms
     hw_confirm_time: 10ms
   sr_100:
     coil_inc: bbc_reel_100
     switch_0: bbs_reel_zero_100
-    repeat_pulse_time: 120ms
+    repeat_pulse_time: 150ms
     hw_confirm_time: 10ms
   sr_1000:
     coil_inc: bbc_reel_1000
     switch_0: bbs_reel_zero_1000
-    repeat_pulse_time: 120ms
+    repeat_pulse_time: 150ms
     hw_confirm_time: 10ms
   sr_10000:
     coil_inc: bbc_reel_10000
     switch_0: bbs_reel_zero_10000
-    repeat_pulse_time: 120ms
+    repeat_pulse_time: 150ms
     hw_confirm_time: 10ms
 
 score_reel_groups:

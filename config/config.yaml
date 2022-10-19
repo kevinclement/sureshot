@@ -50,7 +50,8 @@ machine:
   min_balls: 0
 
 game:
-  balls_per_game: 2 # TODO: switch back to 5 when done with bonus testing
+  balls_per_game: 5 # TODO: switch back to 5 when done with bonus testing
+  max_players: 1 # TODO: switch back once stable
 
 playfields:
   playfield:

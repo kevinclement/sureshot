@@ -99,13 +99,13 @@ lights:
 
   # -- Pop Bumpers ------------
   pfl_popbumper_left:
-    number: 1-1
+    number: 1-8
     type: grb
   pfl_popbumper_middle:
     number: 1-26
     type: grb
   pfl_popbumper_right:
-    number: 1-8
+    number: 1-1
     type: grb
 
   # -- Numbered Inserts -------
