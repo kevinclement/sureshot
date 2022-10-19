@@ -57,39 +57,32 @@ variable_player:
 
 shot_profiles:
   # inverted on/off state for balls  
-  sp_ball:
-    states:
-      - name: light_on
-        show: my_ball_on
-      - name: light_off
-        show: my_ball_off
-        show_tokens:
-          color: green
+  sp_ball: { states: [{ name: one, show: my_ball}, { name: two, show: my_ball_inverted }] }
         
   # profile for lit specials
   special_profile: { advance_on_hit: false, states: [{ name: unlit, show: 'off' }, { name: lit, show: 'on' }] }
 
 shots:
   # Lane Rollovers
-  ball_1: { profile: sp_ball, switch: 'pfs_top_lane_rollover_1',                show_tokens: { l_off: 'pfl_top_lane_1',        l_on: 'pfl_tri_1' } }
-  ball_2: { profile: sp_ball, switch: 'pfs_top_lane_rollover_2, pfs_inlane_2',  show_tokens: { l_off: 'pfl_top_lane_2, pfl_2', l_on: 'pfl_tri_2' } }
-  ball_3: { profile: sp_ball, switch: 'pfs_top_lane_rollover_3, pfs_inlane_3',  show_tokens: { l_off: 'pfl_top_lane_3, pfl_3', l_on: 'pfl_tri_3' } }
-  ball_4: { profile: sp_ball, switch: 'pfs_top_lane_rollover_4, pfs_outlane_4', show_tokens: { l_off: 'pfl_top_lane_4, pfl_4', l_on: 'pfl_tri_4' } }
-  ball_5: { profile: sp_ball, switch: 'pfs_top_lane_rollover_5, pfs_outlane_5', show_tokens: { l_off: 'pfl_top_lane_5, pfl_5', l_on: 'pfl_tri_5' } }
+  ball_1: { profile: sp_ball, switch: 'pfs_top_lane_rollover_1',                show_tokens: { l_on: 'pfl_top_lane_1',        l_off: 'pfl_tri_1' } }
+  ball_2: { profile: sp_ball, switch: 'pfs_top_lane_rollover_2, pfs_inlane_2',  show_tokens: { l_on: 'pfl_top_lane_2, pfl_2', l_off: 'pfl_tri_2' } }
+  ball_3: { profile: sp_ball, switch: 'pfs_top_lane_rollover_3, pfs_inlane_3',  show_tokens: { l_on: 'pfl_top_lane_3, pfl_3', l_off: 'pfl_tri_3' } }
+  ball_4: { profile: sp_ball, switch: 'pfs_top_lane_rollover_4, pfs_outlane_4', show_tokens: { l_on: 'pfl_top_lane_4, pfl_4', l_off: 'pfl_tri_4' } }
+  ball_5: { profile: sp_ball, switch: 'pfs_top_lane_rollover_5, pfs_outlane_5', show_tokens: { l_on: 'pfl_top_lane_5, pfl_5', l_off: 'pfl_tri_5' } }
   
   # Outlanes
-  ball_6:  { profile: sp_ball, switch: pfs_6_rollover,  show_tokens: { l_off: pfl_6,  l_on: 'pfl_tri_6'  } }
-  ball_9:  { profile: sp_ball, switch: pfs_9_rollover,  show_tokens: { l_off: pfl_9,  l_on: 'pfl_tri_7'  } }
-  ball_10: { profile: sp_ball, switch: pfs_10_rollover, show_tokens: { l_off: pfl_10, l_on: 'pfl_tri_10' } }
-  ball_11: { profile: sp_ball, switch: pfs_11_rollover, show_tokens: { l_off: pfl_11, l_on: 'pfl_tri_11' } }
+  ball_6:  { profile: sp_ball, switch: pfs_6_rollover,  show_tokens: { l_on: pfl_6,  l_off: 'pfl_tri_6'  } }
+  ball_9:  { profile: sp_ball, switch: pfs_9_rollover,  show_tokens: { l_on: pfl_9,  l_off: 'pfl_tri_7'  } }
+  ball_10: { profile: sp_ball, switch: pfs_10_rollover, show_tokens: { l_on: pfl_10, l_off: 'pfl_tri_10' } }
+  ball_11: { profile: sp_ball, switch: pfs_11_rollover, show_tokens: { l_on: pfl_11, l_off: 'pfl_tri_11' } }
   
   # Targets
-  ball_7:  { profile: sp_ball, switch: pfs_standup_13_7,  show_tokens: { l_off: 'pfl_7',  l_on: 'pfl_tri_7'  } }
-  ball_8:  { profile: sp_ball, switch: pfs_standup_14_8,  show_tokens: { l_off: 'pfl_8',  l_on: 'pfl_tri_8'  } }
-  ball_12: { profile: sp_ball, switch: pfs_standup_12_15, show_tokens: { l_off: 'pfl_12', l_on: 'pfl_tri_12' } }
-  ball_13: { profile: sp_ball, switch: pfs_standup_13_7,  show_tokens: { l_off: 'pfl_13', l_on: 'pfl_tri_13' } }
-  ball_14: { profile: sp_ball, switch: pfs_standup_14_8,  show_tokens: { l_off: 'pfl_14', l_on: 'pfl_tri_14' } }
-  ball_15: { profile: sp_ball, switch: pfs_standup_12_15, show_tokens: { l_off: 'pfl_15', l_on: 'pfl_tri_15' } }
+  ball_7:  { profile: sp_ball, switch: pfs_standup_13_7,  show_tokens: { l_on: 'pfl_7',  l_off: 'pfl_tri_7'  } }
+  ball_8:  { profile: sp_ball, switch: pfs_standup_14_8,  show_tokens: { l_on: 'pfl_8',  l_off: 'pfl_tri_8'  } }
+  ball_12: { profile: sp_ball, switch: pfs_standup_12_15, show_tokens: { l_on: 'pfl_12', l_off: 'pfl_tri_12' } }
+  ball_13: { profile: sp_ball, switch: pfs_standup_13_7,  show_tokens: { l_on: 'pfl_13', l_off: 'pfl_tri_13' } }
+  ball_14: { profile: sp_ball, switch: pfs_standup_14_8,  show_tokens: { l_on: 'pfl_14', l_off: 'pfl_tri_14' } }
+  ball_15: { profile: sp_ball, switch: pfs_standup_12_15, show_tokens: { l_on: 'pfl_15', l_off: 'pfl_tri_15' } }
 
   # Specials
   #   note: advance_events starts on right side because after all_balls_complete, 
@@ -111,24 +104,14 @@ shot_groups:
   all_balls:  { shots: 'ball_1,  ball_2,  ball_3,  ball_4,  ball_5,
                         ball_6,  ball_7,  ball_8,  ball_9,  ball_10,
                         ball_11, ball_12, ball_13, ball_14, ball_15' }
-  special_s:  {
-                shots: 'special_top, special_l, special_r',
+  special_s:  { shots: 'special_top, special_l, special_r',
                 rotate_right_events: sw_ball_active                  } 
 
-shows:
-  # Inverted on/off state for balls
-  # The triagle leds are mapped normal
-  # TODO: flip this logic so it maps logically, and test :)
-  my_ball_on:
-    - time: 0
-      lights:
-        (l_off): 'on'
-        (l_on): 'off'
-  my_ball_off:
-    - time: 0
-      lights:
-        (l_off): 'off'
-        (l_on): 'on'
+# state 1 has some lights on and others off
+# state 2 inverts those lights
+shows: 
+  my_ball:          [{ time: 0, lights: { (l_off): 'off', (l_on): 'on' } }]
+  my_ball_inverted: [{ time: 0, lights: { (l_off): 'on',  (l_on): 'off'} }]
   
 # Watch for special getting hit, and trigger knocker if it does
 show_player:
