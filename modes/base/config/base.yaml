@@ -54,8 +54,6 @@ variable_player:
 
 shot_profiles:
   # inverted on/off state for balls
-  #   state 1: on
-  #   state 2: off
   sp_ball: { states: [{ name: light_on, show: 'on' }, { name: light_off, show: 'off' }] }
 
   # profile for lit specials
