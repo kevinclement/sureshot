@@ -52,6 +52,9 @@ variable_player:
   left_col_light_on_hit:  { left_col_lit:  { int: 1, action: add } }
   right_col_light_on_hit: { right_col_lit: { int: 1, action: add } }
 
+  # total balls hit (for bonus)
+  all_balls_light_on_hit: { total_balls_collected: { int: 1, action: add } }
+
 shot_profiles:
   # inverted on/off state for balls
   sp_ball: { states: [{ name: light_on, show: 'on' }, { name: light_off, show: 'off' }] }

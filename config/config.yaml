@@ -20,7 +20,8 @@ player_vars:
     initial_value: 0
   right_col_lit:
     initial_value: 0
-
+  total_balls_collected:
+    initial_value: 0
 
 # -- Modes --------------------
 modes:
@@ -49,7 +50,7 @@ machine:
   min_balls: 0
 
 game:
-  balls_per_game: 5
+  balls_per_game: 2 # TODO: switch back to 5 when done with bonus testing
 
 playfields:
   playfield:
