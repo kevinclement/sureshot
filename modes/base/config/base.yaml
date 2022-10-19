@@ -48,15 +48,9 @@ variable_player:
   top_row_complete: { top_pop_multiplier: { int: 10, action: set } }
   bot_row_complete: { mid_pop_multiplier: { int: 10, action: set } }
 
-  # left and right column hits
-  left_col_light_on_hit:
-    left_col_lit:
-      int: 1
-      action: add
-  right_col_light_on_hit:
-    right_col_lit:
-      int: 1
-      action: add
+  # left and right column tracking
+  left_col_light_on_hit:  { left_col_lit:  { int: 1, action: add } }
+  right_col_light_on_hit: { right_col_lit: { int: 1, action: add } }
 
 shot_profiles:
   # inverted on/off state for balls
