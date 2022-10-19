@@ -90,16 +90,16 @@ shots:
 
 # Triangle groupings that give bonuses
 shot_groups: 
-  top_row:    { shots: 'ball_1, ball_2, ball_3, ball_4, ball_5'    } 
-  bot_row:    { shots: 'ball_6, ball_7, ball_8, ball_9'            }
-  left_col:   { shots: 'ball_4, ball_6, ball_10, ball_13, ball_15' }
-  right_col:  { shots: 'ball_5, ball_9, ball_11, ball_14, ball_15' }
-  all_balls:  { shots: 'ball_1, ball_2, ball_3, ball_4, ball_5, ball_6, 
-                        ball_7, ball_8, ball_9, ball_10, ball_11, ball_12,
-                        ball_13, ball_14, ball_15' } 
+  top_row:    { shots: 'ball_1,  ball_2,  ball_3,  ball_4,  ball_5'  } 
+  bot_row:    { shots: 'ball_6,  ball_7,  ball_8,  ball_9'           }
+  left_col:   { shots: 'ball_4,  ball_6,  ball_10, ball_13, ball_15' }
+  right_col:  { shots: 'ball_5,  ball_9,  ball_11, ball_14, ball_15' }
+  all_balls:  { shots: 'ball_1,  ball_2,  ball_3,  ball_4,  ball_5,
+                        ball_6,  ball_7,  ball_8,  ball_9,  ball_10,
+                        ball_11, ball_12, ball_13, ball_14, ball_15' }
   special_s:  {
                 shots: 'special_top, special_l, special_r',
-                rotate_right_events: sw_ball_active } 
+                rotate_right_events: sw_ball_active                  } 
 
 light_player:
   # Center Triangle Lights
