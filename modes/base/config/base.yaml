@@ -48,6 +48,7 @@ variable_player:
   top_row_complete: { top_pop_multiplier: { int: 10, action: set } }
   bot_row_complete: { mid_pop_multiplier: { int: 10, action: set } }
 
+  # left and right column hits
   left_col_light_on_hit:
     left_col_lit:
       int: 1
@@ -61,21 +62,11 @@ shot_profiles:
   # inverted on/off state for balls
   #   state 1: on
   #   state 2: off
-  sp_ball:
-    states:
-      - name: light_on
-        show: on 
-      - name: light_off
-        show: off 
-  
+  sp_ball: { states: [{ name: light_on, show: 'on' }, { name: light_off, show: 'off' }] }
+
   # profile for lit specials
-  special_profile:
-    advance_on_hit: false
-    states:
-      - name: unlit
-        show: off
-      - name: lit
-        show: on
+  special_profile: { advance_on_hit: false, states: [{ name: unlit, show: 'off' }, { name: lit, show: 'on' }] }
+  
 shots:
   # Lane Rollovers
   ball_1: { profile: sp_ball, switch: 'pfs_top_lane_rollover_1',                show_tokens: { light: 'pfl_top_lane_1'        } }
@@ -98,37 +89,25 @@ shots:
   ball_14: { profile: sp_ball, switch: pfs_standup_14_8,  show_tokens: { light: 'pfl_14' } }
   ball_15: { profile: sp_ball, switch: pfs_standup_12_15, show_tokens: { light: 'pfl_15' } }
 
-  special_top:
-    switch: pfs_top_lane_rollover_1
-    profile: special_profile
-    show_tokens:
-      light: pfl_top_lane_special
-  special_l:
-    switch: pfs_saucer_left
-    profile: special_profile
-    show_tokens:
-      light: pfl_special_left
-  special_r:
-    advance_events: all_balls_complete # starts on the right because one ball advance is going to come in after complete
-    switch: pfs_saucer_right
-    profile: special_profile
-    show_tokens:
-      light: pfl_special_right
+  # Specials
+  #   note: advance_events starts on right side because after all_balls_complete, 
+  #   it will do one extra ball_active to move and we want it to start at the top.
+  special_top: { profile: special_profile, switch: pfs_top_lane_rollover_1, show_tokens: {light: pfl_top_lane_special}                                  }
+  special_l:   { profile: special_profile, switch: pfs_saucer_left,         show_tokens: {light: pfl_special_left}                                      } 
+  special_r:   { profile: special_profile, switch: pfs_saucer_right,        show_tokens: {light: pfl_special_right}, advance_events: all_balls_complete }
 
 # Triangle groupings that give bonuses
 shot_groups: 
-  top_row:   { shots: 'ball_1, ball_2, ball_3, ball_4, ball_5'    } 
-  bot_row:   { shots: 'ball_6, ball_7, ball_8, ball_9'            }
-  left_col:  { shots: 'ball_4, ball_6, ball_10, ball_13, ball_15' }
-  right_col: { shots: 'ball_5, ball_9, ball_11, ball_14, ball_15' }
-  all_balls: { 
-               shots: 'ball_1, ball_2, ball_3, ball_4, ball_5, ball_6, 
-                       ball_7, ball_8, ball_9, ball_10, ball_11, ball_12,
-                       ball_13, ball_14, ball_15' 
-              } 
-  special_shot:
-    shots: special_top, special_l, special_r
-    rotate_right_events: sw_ball_active # rotates after any ball is hit
+  top_row:    { shots: 'ball_1, ball_2, ball_3, ball_4, ball_5'    } 
+  bot_row:    { shots: 'ball_6, ball_7, ball_8, ball_9'            }
+  left_col:   { shots: 'ball_4, ball_6, ball_10, ball_13, ball_15' }
+  right_col:  { shots: 'ball_5, ball_9, ball_11, ball_14, ball_15' }
+  all_balls:  { shots: 'ball_1, ball_2, ball_3, ball_4, ball_5, ball_6, 
+                        ball_7, ball_8, ball_9, ball_10, ball_11, ball_12,
+                        ball_13, ball_14, ball_15' } 
+  special_s:  {
+                shots: 'special_top, special_l, special_r',
+                rotate_right_events: sw_ball_active } 
 
 light_player:
   # Center Triangle Lights
@@ -152,7 +131,8 @@ light_player:
   top_row_complete:     { pfl_popbumper_left: on, pfl_popbumper_right: on }
   bot_row_complete:     { pfl_popbumper_middle: on } 
 
+# Watch for special getting hit, and trigger knocker if it does
 show_player:
-  special_shot_lit_hit: 
+  special_s_lit_hit:
     match_knocker:
       loops: 0
