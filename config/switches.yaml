@@ -24,6 +24,7 @@ switches:
   cas_start_btn:
     number: 0-2
     tags: start
+    ignore_window_ms: 200ms
 
   ## PLAYFIELD   ######################################
   #####################################################
