@@ -5,6 +5,7 @@ mpf:
 
 config:
   - coils.yaml
+  - infolights.yaml
   - lights.yaml
   - mechs.yaml
   - platform_fast.yaml

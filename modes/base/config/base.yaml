@@ -107,8 +107,8 @@ shot_groups:
   special_s:  { shots: 'special_top, special_l, special_r',
                 rotate_right_events: sw_ball_active                  } 
 
-# state 1 has some lights on and others off
-# state 2 inverts those lights
+# state 1 has some lights on and others off, state 2 inverts those lights.  
+# allows for ball rollovers, and triangle center
 shows: 
   my_ball:          [{ time: 0, lights: { (l_off): 'off', (l_on): 'on' } }]
   my_ball_inverted: [{ time: 0, lights: { (l_off): 'on',  (l_on): 'off'} }]
