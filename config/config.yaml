@@ -31,8 +31,9 @@ modes:
   - match
 
 show_player:
-  game_started:
+  init_done: 
     general_illumination: play
+  game_started:
     match_blank: play
   game_ending:
     match_blank: stop

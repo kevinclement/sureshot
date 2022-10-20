@@ -1,4 +1,3 @@
 #config_version=5
 
-show_player:
-  mode_attract_started: general_illumination
+# GI is started in machine_config after init-done event
