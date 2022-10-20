@@ -48,8 +48,8 @@ machine:
   min_balls: 0
 
 game:
-  balls_per_game: 5 # TODO: switch back to 5 when done with bonus testing
-  max_players: 1 # TODO: switch back once stable
+  balls_per_game: 5
+  max_players: 2 # TODO: switch back once stable
 
 playfields:
   playfield:
@@ -58,6 +58,11 @@ playfields:
 # TODO: ADD BACK
 #    enable_ball_search: true
 #    ball_search_disable_events: balldevice_playfield_ball_enter
+
+# -- Logging ------------------
+logging:
+  console:
+    event_manager: basic
 
 # -- Virtual ------------------
 virtual_platform_start_active_switches: pfs_drain

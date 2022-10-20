@@ -58,6 +58,11 @@ lights:
     number: 2-0
     type: grb
 
+  bbl_100k:
+    number: 2-16
+    type: rgb
+    default_on_color: blanchedalmond
+  
   # -- GI ---------------------
   bbl_backbox_gi:
     number: bbc_gi_lights

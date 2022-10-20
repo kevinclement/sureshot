@@ -95,6 +95,9 @@ shots:
   pop_top: { advance_events: top_row_complete, show_tokens: { light: 'pfl_popbumper_left, pfl_popbumper_right' } }
   pop_bot: { advance_events: bot_row_complete, show_tokens: { light: 'pfl_popbumper_middle' } }
 
+  # Scored over 100,000 backbox light
+  scored_over_100_thousand: { advance_events: 'player_score{value>=100000}', show_tokens: { light: bbl_100k } }
+  
 # Triangle groupings that give bonuses
 shot_groups: 
   top_row:    { shots: 'ball_1,  ball_2,  ball_3,  ball_4,  ball_5'  } 
