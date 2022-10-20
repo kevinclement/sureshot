@@ -24,16 +24,16 @@ coils:
   #####################################################
   cac_chime_low:
     number: 0-2
-    default_pulse_ms: 5ms
+    default_pulse_power: 0.5
   cac_chime_mid:
     number: 0-3
-    default_pulse_ms: 5ms
+    default_pulse_power: 0.5
   cac_chime_high:
     number: 0-1
-    default_pulse_ms: 5ms
+    default_pulse_power: 0.5
   cac_knocker:
     number: 0-0
-    default_pulse_ms: 7ms
+    default_pulse_power: 0.5
 
   ## PLAYFIELD-LOWER  :  FP-I/O-0804  #################
   #####################################################
