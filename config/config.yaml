@@ -43,7 +43,11 @@ show_player:
     trough_blink: play
   ball_search_stopped:
     trough_blink: stop
-
+  player_added{num==1}: { player_added_show: {loops: 0} }
+  player_added{num==2}: { player_added_show: {loops: 1} }
+  player_added{num==3}: { player_added_show: {loops: 2} }
+  player_added{num==4}: { player_added_snow: {loops: 3} }
+  
 machine:
   # TODO: ADD BACK: if we want ballsearch logic
   min_balls: 0

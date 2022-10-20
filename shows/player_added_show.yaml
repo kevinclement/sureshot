@@ -1,0 +1,5 @@
+#show_version=5
+[
+  # play a tone when a player is added via start button.  loop number controlled externally
+  { duration: 170ms, coils: { cac_chime_low:  { action: pulse } } },
+]
