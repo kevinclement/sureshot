@@ -63,6 +63,12 @@ playfields:
 logging:
   console:
     event_manager: basic
+    device_manager: basic
+#    machine_controller: full
+#    platforms: full
+#    service_controller: full
+#    settings_controller: full
+#    show_controller: full
 
 # -- Virtual ------------------
 virtual_platform_start_active_switches: pfs_drain

@@ -7,7 +7,8 @@ hardware:
 fast:
   # TODO: would be nice to have this be conditional based on platform_system
   ports: /dev/ttyUSB1,/dev/ttyUSB2
-  hardware_led_fade_time: 100ms
+  hardware_led_fade_time: 65ms
+  rgb_buffer: 10
   # These are defaults, but mpfls thinks they are required
   default_normal_debounce_open: 10ms
   default_normal_debounce_close: 10ms
