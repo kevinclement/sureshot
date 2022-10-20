@@ -1,5 +1,6 @@
 #show_version=5
 [
+  { time: 300ms },
   { duration: 180ms, coils: { cac_chime_high:  { action: pulse } } },
   { duration: 180ms, coils: { cac_chime_high:  { action: pulse } } },
   { duration: 180ms, coils: { cac_chime_high:  { action: pulse } } },
