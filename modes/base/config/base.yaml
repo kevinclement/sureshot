@@ -97,7 +97,7 @@ shots:
 
   # Scored over 100,000 backbox light
   scored_over_100_thousand: { advance_events: 'player_score{value>=100000}', show_tokens: { light: bbl_100k } }
-  
+
 # Triangle groupings that give bonuses
 shot_groups: 
   top_row:    { shots: 'ball_1,  ball_2,  ball_3,  ball_4,  ball_5'  } 
@@ -115,9 +115,42 @@ shot_groups:
 shows: 
   my_ball:          [{ time: 0, lights: { (l_off): 'off', (l_on): 'on' } }]
   my_ball_inverted: [{ time: 0, lights: { (l_off): 'on',  (l_on): 'off'} }]
-  
-# Watch for special getting hit, and trigger knocker if it does
+
+# Watch for events that trigger knocker
+#   a) special shot hit
+#   b) replay values reached (150,000, 180,000)
 show_player:
   special_s_lit_hit:
     match_knocker:
       loops: 0
+  replay_earned:
+    match_knocker:
+      loops: 0
+
+# State machine that handles the 3 replay awards
+state_machines:
+  my_replay_states:
+    persist_state: true
+    debug: true
+    states:
+      start:
+        label: Start state
+      step1:
+        label: Step one state
+        events_when_started: replay_earned
+      step2:
+        label: Step two state
+        events_when_started: replay_earned
+      step3:
+        label: Step three state
+        events_when_started: replay_earned
+    transitions:
+      - source: start
+        target: step1
+        events: player_score{value>=500}
+      - source: step1
+        target: step2
+        events: player_score{value>=800}
+      - source: step2
+        target: step3
+        events: player_score{value>=1400}
