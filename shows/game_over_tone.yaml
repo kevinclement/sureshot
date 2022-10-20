@@ -1,32 +1,24 @@
 #show_version=5
+[
+  { duration: 180ms, coils: { cac_chime_high:  { action: pulse } } },
+  { duration: 180ms, coils: { cac_chime_high:  { action: pulse } } },
+  { duration: 180ms, coils: { cac_chime_high:  { action: pulse } } },
+  { duration: 250ms, coils: { cac_chime_mid:   { action: pulse } } },
+  { duration: 200ms, coils: { cac_chime_high:  { action: pulse } } },
+  { duration: 180ms, coils: { cac_chime_mid:   { action: pulse } } },
+]
 
-- duration: 170ms
-  coils:
-      cac_chime_low: 
-          action: pulse
-          max_wait_ms: 50
-- duration: 170ms
-  coils:
-      cac_chime_mid:
-          action: pulse
-          max_wait_ms: 50
-- duration: 170ms
-  coils:
-      cac_chime_low: 
-          action: pulse
-          max_wait_ms: 50
-- duration: 170ms
-  coils:
-      cac_chime_high: 
-          action: pulse
-          max_wait_ms: 50
-- duration: 170ms
-  coils:
-      cac_chime_high: 
-          action: pulse
-          max_wait_ms: 50
-- duration: 170ms
-  coils:
-      cac_chime_mid: 
-          action: pulse
-          max_wait_ms: 50
+  # Almost trumpet opening
+  # { duration: 150ms, coils: { cac_chime_low:  { action: pulse } } },
+  # { duration: 150ms, coils: { cac_chime_mid:  { action: pulse } } },
+  # { duration: 150ms, coils: { cac_chime_high: { action: pulse } } },
+  # { duration: 150ms, coils: { cac_chime_high:  { action: pulse } } },
+  # { duration: 250ms, coils: { cac_chime_high:  { action: pulse } } },
+  # { duration: 200ms, coils: { cac_chime_mid: { action: pulse } } },
+  # { duration: 200ms, coils: { cac_chime_mid: { action: pulse } } },
+  # { duration: 200ms, coils: { cac_chime_mid: { action: pulse } } },
+  # { duration: 150ms, coils: { cac_chime_low:  { action: pulse } } },
+  # { duration: 250ms, coils: { cac_chime_mid:  { action: pulse } } },
+  # { duration: 250ms, coils: { cac_chime_mid:  { action: pulse } } },
+  # { duration: 200ms, coils: { cac_chime_high: { action: pulse } } },
+  # { duration: 200ms, coils: { cac_chime_high:  { action: pulse } } },
