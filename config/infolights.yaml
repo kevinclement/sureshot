@@ -1,25 +1,8 @@
 #config_version=5
 info_lights:
-  # match_00:
-  #   light: match00
-  # match_10:
-  #   light: match10
-  # match_20:
-  #   light: match20
-  # match_30:
-  #   light: match30
-  # match_40:
-  #   light: match40
-  # match_50:
-  #   light: match50
-  # match_60:
-  #   light: match60
-  # match_70:
-  #   light: match70
-  # match_80:
-  #   light: match80
-  # match_90:
-  #   light: match90
+  # NOTE: not using match_XX feature here.  I want to fire the knocker and
+  # wasn't immediately easly for me to articulate that configuration given 'winners'
+  # I already had a pretty simple match mode that blinks match and knocks so keeing that.
   ball_1:
     light: bbl_ball_in_play_1
   ball_2:
@@ -30,5 +13,5 @@ info_lights:
     light: bbl_ball_in_play_4
   ball_5:
     light: bbl_ball_in_play_5
-  # game_over:
-  #   light: gameOver
+  game_over:
+    light: bbl_gameover
