@@ -131,26 +131,22 @@ show_player:
 state_machines:
   my_replay_states:
     persist_state: true
-    debug: true
     states:
       start:
-        label: Start state
-      step1:
-        label: Step one state
+        label: 
+      replay_award_1:
         events_when_started: replay_earned
-      step2:
-        label: Step two state
+      replay_award_2:
         events_when_started: replay_earned
-      step3:
-        label: Step three state
+      replay_award_3:
         events_when_started: replay_earned
     transitions:
       - source: start
-        target: step1
-        events: player_score{value>=500}
-      - source: step1
-        target: step2
-        events: player_score{value>=800}
-      - source: step2
-        target: step3
-        events: player_score{value>=1400}
+        target: replay_award_1
+        events: player_score{value>=110000}
+      - source: replay_award_1
+        target: replay_award_2
+        events: player_score{value>=150000}
+      - source: replay_award_2
+        target: replay_award_3
+        events: player_score{value>=170000}        
