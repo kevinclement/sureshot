@@ -25,4 +25,4 @@ Their system worked beautifully and it was a joy to use.  The documentation was 
 
 ## What's Next
 
-Work done up to now was about replicating the original machines rules and behaviors.  Now that we're on this modern stack we should be able to more easily define alternative rulesets that we can run alongside the original to experiment with pinball design.
+Work done up to now was about replicating the original machines rules and behaviors.  Now that we're on this modern stack we should be able to more easily define alternative rulesets that we can run alongside the original to experiment with pinball design. 🦫⚡️
