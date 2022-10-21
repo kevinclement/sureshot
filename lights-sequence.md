@@ -12,10 +12,13 @@
 ```mermaid
     flowchart LR
         A["l_5_top (1-0)"] ==> B["l_popbumper_right"] ==> C["l_3_top"] ==> D["l_1"] ==> E["l_special_top"] ==> F["l_2_top"] ==> G["l_4_top"]
+
     flowchart LR
         H["l_special_left"] ==> I["l_popbumper_left"] ==> J["l_10"] ==> K["l_6"] ==> L["l_13"] ==> M["l_4"] ==> N["l_2"] 
+
     flowchart LR
         O["l_7"] ==> P["l_trough_1"] ==> Q["l_trough_2"] ==> R["l_trough_3"] ==> S["l_trough_4"] ==> T["l_trough_5"] 
+        
     flowchart LR        
         U["l_trough_6"] ==> V["l_triangle_15"] ==> W["l_triangle_13"]
 ```
