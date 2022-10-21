@@ -1,8 +1,7 @@
-## ➿➿ Wiring Ordering Under Playfield ➿➿
-
-
-===========================================================
-
+## ➿➿ Wiring Ordering Under Playfield ➿➿  
+  
+<img src="./img/playfield_lights_order.jpeg">  
+  
 | 💡  | 🔌 |
 | :--- | ---: |
 | l_5_top | 1-0 |
