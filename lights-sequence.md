@@ -11,7 +11,7 @@
 
 ```mermaid
 flowchart LR
-    A["l_5_top (1-0)"] ==> l_popbumper_right ==> l_3_top ==> l_1 ==> l_special_top ==> l_2_top ==> l_4_top ==> l_special_left ==> l_popbumper_left ==> l_10 ==> l_6 ==> l_13 ==> l_4 ==> l_2 ==> l_7 ==> l_trough_1 ==> l_trough_2 ==> l_trough_3 ==> l_trough_4 ==> l_trough_5 ==> l_trough_6 ==> l_triangle_15 ==> l_triangle_13 ==> l_triangle_10 ==> l_triangle_6 ==> l_triangle_4 ==> l_popbumper_middle ==> l_12 ==> l_15 ==> l_triangle_2 ==> l_triangle_1 ==> l_triangle_3 ==> l_triangle_5 ==> l_triangle_9 ==> l_triangle_8 ==> l_triangle_7 ==> l_triangle_12 ==> l_triangle_14 ==> l_triangle_11 ==> l_8 ==> l_3 ==> l_5 ==> l_14 ==> l_9 ==> l_11 ==> l_special_right
+    A["l_5_top (1-0)"] ==> B["l_popbumper_right"] ==> C["l_3_top"] ==> D["l_1"] ==> E["l_special_top"] ==> F["l_2_top"] ==> G["l_4_top"] ==> H["l_special_left"] ==> I["l_popbumper_left"] 
 ```
 
 l_5_top             1-0
