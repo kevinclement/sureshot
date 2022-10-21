@@ -11,7 +11,7 @@
 
 ```mermaid
 flowchart LR
-    A -- (1-0) --> B ==> C
+    A -- "(1-0)" --> B ==> C
 ```
 
 l_5_top             
