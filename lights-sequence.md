@@ -11,10 +11,10 @@
 
 ```mermaid
 flowchart LR
-    "A (1-0)" ==> B ==> C
+    A["l_5_top (1-0)"] ==> B ==> C
 ```
 
-l_5_top             
+l_5_top             1-0
 l_popbumper_right   1-1   
 l_3_top			    1-2
 l_1			        1-3
