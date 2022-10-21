@@ -6,14 +6,14 @@ Sure Shot Modern is the reimplementation of the old Gottlieb solid state pinball
 using modern electronics that allow for even more goodness.
 
 * **Original** cabinet and backbox and backglass. 
-<img src="./img/cabinet-stripped.jpeg" height="200">
-
 * **Reused** the playfield, and all playfield components like pop-bumpers, targets, etc.
-<img src="./img/playfield-stripped.jpeg" height="200">
-
 * Same flipper bats and rubbers, but upgraded the **flipper coils** to more modern style.
 * Pulled out all mechanical state machines and power supply including lots of old fabric wrapped wire.
-  <p><img src="./img/cabinet-old-tech.jpeg" height="200"></p>
+<p>
+  <img src="./img/cabinet-stripped.jpeg" height="200" style="padding-right:10px">
+  <img src="./img/playfield-stripped.jpeg" height="200" style="padding-right:10px">
+  <img src="./img/cabinet-old-tech.jpeg" height="200">
+</p>
 
 
 * Add Size Limit to **Travis CI**, **Circle CI**, **GitHub Actions**
