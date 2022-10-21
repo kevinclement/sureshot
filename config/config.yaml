@@ -55,6 +55,9 @@ game:
   balls_per_game: 5
   max_players: 4
 
+custom_code:
+  - code.led_control.LEDController
+
 playfields:
   playfield:
     tags: default
