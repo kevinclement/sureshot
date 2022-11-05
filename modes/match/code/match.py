@@ -10,6 +10,10 @@ class Match(AsyncMode):
         self.match_numbers  = ['00', '10', '20', '30', '40', '50', '60', '70', '80', '90']
         aMatchFound = False
 
+        # make sure all match lights are off
+        for loop in self.match_numbers:
+            self.machine.lights["bbl_match_" + loop].off(key="match")
+
         # calculate the winning random number, and turn its light on
         self.log.info("Calculating random winning match number...")
         random_match_numbers = self.match_numbers

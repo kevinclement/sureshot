@@ -2,6 +2,7 @@
 ##! mode: base
 mode:
   start_events: ball_started
+  code: base.Playground
   priority: 100
 
 variable_player:
