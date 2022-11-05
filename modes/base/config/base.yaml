@@ -109,7 +109,7 @@ shot_groups:
                         ball_6,  ball_7,  ball_8,  ball_9,  ball_10,
                         ball_11, ball_12, ball_13, ball_14, ball_15' }
   special_s:  { shots: 'special_top, special_l, special_r',
-                rotate_right_events: sw_ball_active                  } 
+                rotate_right_events: 'sw_ball_active, special_l_lit_hit, special_r_lit_hit' } 
 
 # state 1 has some lights on and others off, state 2 inverts those lights.  
 # allows for ball rollovers, and triangle center
